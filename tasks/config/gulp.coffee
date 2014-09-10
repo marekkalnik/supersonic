@@ -2,6 +2,7 @@ gulp = require "gulp"
 sass = require "gulp-sass"
 concat = require "gulp-concat"
 browserify = require "gulp-browserify"
+coffee = require "gulp-coffee"
 
 buildConfig = require "../../config/buildConfig.coffee"
 
@@ -32,4 +33,10 @@ module.exports =
         extensions: ['.coffee']
       ))
       .pipe(concat 'supersonic.js')
+      .pipe(gulp.dest "#{buildConfig.dir.dist}")
+
+  # Just the Supersonic bootstrap
+  bootstrap: ->
+    gulp.src("#{buildConfig.dir.src}/supersonic.bootstrap.coffee")
+      .pipe(coffee())
       .pipe(gulp.dest "#{buildConfig.dir.dist}")
