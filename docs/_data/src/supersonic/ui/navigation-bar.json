@@ -1,0 +1,76 @@
+[
+  {
+    "params": [],
+    "name": "navigationBar",
+    "description": "Provides methods to work with navigation bar"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "[parameters]",
+        "description": "Parameters of hiding",
+        "optional": true
+      }
+    ],
+    "name": "show",
+    "description": "Shows a navigation bar",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.ui.navigationBar.show({ animated: true, title: \"New Title\" }).then ()->\n  supersonic.logger.log \"promise works\"\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "[parameters]",
+        "description": "Parameters of hiding",
+        "optional": true
+      }
+    ],
+    "name": "hide",
+    "description": "Hides a navigation bar",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.ui.navigationBar.hide({ animated: true }).then ()->\n  supersonic.logger.log \"promise works\"\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "[parameters]",
+        "description": "Parameters of hiding",
+        "optional": true
+      }
+    ],
+    "name": "update",
+    "description": "Updates the navigation bar",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nleftButton = new supersonic.ui.navigationButton({\n  title: \"Left\"\n  onTap: ()->\n    alert \"left\"\n});\nsupersonic.ui.navigationBar.update({\n  overrideBackButton: true,\n  buttons: {\n    left: [leftButton]\n  }\n}).then ()->\n  supersonic.logger.log \"promise works\"\n```"
+  }
+]

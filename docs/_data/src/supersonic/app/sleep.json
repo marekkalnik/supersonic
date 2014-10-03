@@ -1,0 +1,33 @@
+[
+  {
+    "params": [],
+    "name": "sleep",
+    "description": "Allows the user to turn the device automatic sleep on or off for your app."
+  },
+  {
+    "params": [],
+    "name": "disable",
+    "description": "Disables the device automatic sleep for your app.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the native side has successfully disabled sleep."
+    },
+    "usage": "```coffeescript\nsupersonic.app.sleep.disable()\n```"
+  },
+  {
+    "params": [],
+    "name": "enable",
+    "description": "Enables the device automatic sleep for your app.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the native side has successfully enabled sleep."
+    },
+    "usage": "```coffeescript\nsupersonic.app.sleep.enable()\n```"
+  }
+]

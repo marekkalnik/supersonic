@@ -1,0 +1,101 @@
+[
+  {
+    "params": [],
+    "name": "drawer",
+    "description": "Module of methods to work with drawers"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "View"
+        ],
+        "name": "View",
+        "description": "object",
+        "optional": false
+      }
+    ],
+    "name": "asLeft",
+    "description": "Shows a view as a left drawer",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "A promise that will be resolved once the drawer has been shown."
+    },
+    "usage": "```coffeescript\nview = supersonic.ui.view(\"app/drawers/left.html\")\nsupersonic.ui.drawer.asLeft(view)\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "View"
+        ],
+        "name": "View",
+        "description": "object",
+        "optional": false
+      }
+    ],
+    "name": "asRight",
+    "description": "Shows a view as a right drawer",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "A promise that will be resolved once the drawer has been shown."
+    },
+    "usage": "```coffeescript\nview = supersonic.ui.view(\"app/drawers/right.html\")\nsupersonic.ui.drawer.asRight(view)\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "View"
+        ],
+        "name": "View",
+        "description": "object",
+        "optional": false
+      },
+      {
+        "type": "param",
+        "types": [
+          "String"
+        ],
+        "name": "Side",
+        "description": "to show a drawer: \"left\" or \"right\"",
+        "optional": false
+      }
+    ],
+    "name": "show",
+    "description": "Shows a view as a drawer of the given side",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "A promise that will be resolved once the drawer has been shown."
+    },
+    "usage": "```coffeescript\nview = supersonic.ui.view(\"app/drawers/index.html\")\nsupersonic.ui.drawer.show(view, \"left\")\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "Hash",
+        "description": "of parameters",
+        "optional": false
+      }
+    ],
+    "name": "setOptions",
+    "description": "Sets options for drawers",
+    "usage": "```coffeescript\nsupersonic.ui.drawer.setOptions\n  showShadow: true\n  animation: steroids.drawers.defaultAnimations.PARALLAX\n```"
+  }
+]

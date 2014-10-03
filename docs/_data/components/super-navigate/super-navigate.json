@@ -1,0 +1,10 @@
+[
+  {
+    "params": [],
+    "category": "webComponent",
+    "name": "super-navigate",
+    "description": "Navigates to a view.",
+    "attribute": "url url or path to the window.location of the view to be shown as a modal.",
+    "usage": "```html\n<super-navigate action=\"click\" url=\"http://google.com\">Open Google</super-navigate>\n```"
+  }
+]

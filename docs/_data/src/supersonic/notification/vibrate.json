@@ -1,0 +1,25 @@
+[
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Number"
+        ],
+        "name": "time",
+        "description": "time in illiseconds to vibrate the device. Please note: iOS ignores the time parameter and always vibrates for a pre-set amount of time.",
+        "optional": false
+      }
+    ],
+    "name": "vibrate",
+    "description": "Vibrates the device for the specified amount of time.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the native side has vibrated."
+    },
+    "usage": "```coffeescript\nsupersonic.notification.vibrate(2500)\n```"
+  }
+]

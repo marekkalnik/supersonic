@@ -1,0 +1,15 @@
+[
+  {
+    "params": [],
+    "name": "getLaunchURL",
+    "description": "Returns the string that was used to launch the application with URL scheme.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved with the launch URL string as an argument when the application was launched using an URL schema."
+    },
+    "usage": "```coffeescript\nsupersonic.app.getLaunchURL()\n```"
+  }
+]

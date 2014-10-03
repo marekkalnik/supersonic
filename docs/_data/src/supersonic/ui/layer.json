@@ -1,0 +1,102 @@
+[
+  {
+    "params": [],
+    "name": "layer",
+    "description": "Provides methods to work with layers"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "View"
+        ],
+        "name": "A",
+        "description": "view object",
+        "optional": false
+      }
+    ],
+    "name": "push",
+    "description": "Navigates to a given view",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nv = supersonic.ui.view(\"http://www.google.com\")\nsupersonic.ui.layer.push(v)\n```"
+  },
+  {
+    "params": [],
+    "name": "pop",
+    "description": "Removes the topmost view from the navigation stack",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.ui.layer.pop()\n```"
+  },
+  {
+    "params": [],
+    "name": "popAll",
+    "description": "Pops all views except for the root view from the layer stack",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.ui.layer.popAll()\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "Parameters",
+        "description": "of animation",
+        "optional": false
+      }
+    ],
+    "name": "showInitial",
+    "description": "Shows initial view",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.ui.layer.showInitial()\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "Parameters",
+        "description": "of animation",
+        "optional": false
+      }
+    ],
+    "name": "hideInitial",
+    "description": "Hides initial view",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.ui.layer.hideInitial()\n```"
+  }
+]

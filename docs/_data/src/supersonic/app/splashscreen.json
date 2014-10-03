@@ -1,0 +1,33 @@
+[
+  {
+    "params": [],
+    "name": "splashscreen",
+    "description": "The splashscreen is shown in the application startup. The initial splashscreen is hidden automatically after 3 seconds on iOS and on the pageload event on Android. Allows the user to hide and show the splashscreen programmitically. The splashscreen is defined in your project's build configuration."
+  },
+  {
+    "params": [],
+    "name": "show",
+    "description": "Shows the splashscreen programmatically.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the splashscreen is shown."
+    },
+    "usage": "```coffeescript\nsupersonic.app.splashscreen.show()\n```"
+  },
+  {
+    "params": [],
+    "name": "hide",
+    "description": "Hides the splashscreen programmatically.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the splashscreen is hidden."
+    },
+    "usage": "```coffeescript\nsupersonic.app.splashscreen.hide()\n```"
+  }
+]

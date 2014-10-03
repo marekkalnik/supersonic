@@ -1,0 +1,52 @@
+[
+  {
+    "params": [],
+    "name": "statusBar",
+    "description": "The native status bar shown on the top of the screen. The native status bar is displayed by default. It can be hidden and shown application wide."
+  },
+  {
+    "params": [],
+    "name": "hide",
+    "description": "Hides the native status bar application wide.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the status bar is hidden."
+    },
+    "usage": "```coffeescript\nsupersonic.app.statusBar.hide()\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "string"
+        ],
+        "name": "style",
+        "description": "If set to \"light\" (shorthand), then the native status bar text color is light (white on iOS 7). Optional.",
+        "optional": false
+      },
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "options",
+        "description": "Options object with `style` property (verbose). Optional.",
+        "optional": false
+      }
+    ],
+    "name": "show",
+    "description": "Shows the native status bar application wide. If no parameters are given, the status bar text color is the default color (black on iOS 7).",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the status bar is shown."
+    },
+    "usage": "```coffeescript\nsupersonic.app.statusBar.show()\n# Shorthand\nsupersonic.app.statusBar.show(\"light\")\n# Verbose\noptions =\n style: \"light\"\nsupersonic.app.statusBar.show(options)\n```"
+  }
+]

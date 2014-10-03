@@ -1,0 +1,82 @@
+[
+  {
+    "params": [],
+    "name": "view",
+    "description": "Allows to create new View instances"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "string"
+        ],
+        "name": "URL",
+        "description": "of a view",
+        "optional": false
+      }
+    ],
+    "name": "view",
+    "description": "Creates a new view",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Object"
+      ],
+      "description": "The created view object."
+    },
+    "usage": "```coffeescript\nsupersonic.ui.view(\"http://www.google.com\")\n```"
+  },
+  {
+    "params": [],
+    "name": "_checkIfPreloaded",
+    "description": "Asynchroniously checks if a view is already preloaded",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "A promise that will be resolved with a boolean value indicating if the view is preloaded or not."
+    },
+    "usage": "```coffeescript\nthis._checkIfPreloaded().then (isPreloaded)->\n  # gets {Boolean} ifPreloaded\n```"
+  },
+  {
+    "params": [],
+    "name": "preload",
+    "description": "Preloads a new",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "A promise that will be resolved once the view has been preloaded."
+    },
+    "usage": "```coffeescript\nsupersonic.ui.view(\"http://www.google.com\").preload()\n\nv = supersonic.ui.view(\"http://www.google.com\")\nv.preload()\n```"
+  },
+  {
+    "params": [],
+    "name": "setWidth",
+    "description": "Sets width of a view. Useful for showing as a drawer",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Object"
+      ],
+      "description": "View object"
+    },
+    "usage": "```coffeescript\nview = supersonic.ui.view(\"http://www.google.com\").setWidth(200)\n```"
+  },
+  {
+    "params": [],
+    "name": "getView",
+    "description": "Gets the WebView of a current view instance",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Object"
+      ],
+      "description": "WebView object"
+    },
+    "usage": "```coffeescript\nsupersonic.ui.view(\"http://www.google.com\").getView()\n```"
+  }
+]

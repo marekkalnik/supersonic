@@ -1,0 +1,34 @@
+[
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "string"
+        ],
+        "name": "message",
+        "description": "confirm message",
+        "optional": false
+      },
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "[options]",
+        "description": "an options object. The following properties are available: * `title`: confirm title (optional, defaults to \"Confirm\")\n* `buttonLabels`: Array of strings specifying button labels (optional, defaults to [\"OK\",\"Cancel\"]).",
+        "optional": true
+      }
+    ],
+    "name": "confirm",
+    "description": "Shows a native confirm dialog.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved with the index of the tapped button as an argument."
+    },
+    "usage": "```coffeescript\n# Basic usage\nsupersonic.notification.confirm(\"You are awesome!\")\n\n# With options\nsupersonic.notification.confirm(\"I'm a confirm!\", {\n  title: \"Custom Title\"\n  buttonLabels: [\"Yes\", \"Close\"]\n})\n```"
+  }
+]

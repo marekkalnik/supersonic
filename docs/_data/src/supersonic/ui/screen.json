@@ -1,0 +1,33 @@
+[
+  {
+    "params": [],
+    "name": "screen",
+    "description": "Methods and properties to control the visible part of the application."
+  },
+  {
+    "params": [],
+    "name": "setAllowedRotations",
+    "description": "Determine which of the four possible screen rotations are enabled on your device. By default all rotations are allowed, with the exception of custom builds where the build settings have been used to lock the app into a certain rotation scheme. Modals are not affected by setting allowed rotations in other views and conversely setting allowed rotations in a modal does not affect the rest of the app.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the allowed rotations are set."
+    },
+    "usage": "```coffeescript\n# Shorthand:\nsupersonic.ui.screen.setAllowedRotations([\"landscapeLeft\"])\n# Verbose:\noptions =\n orientations: [\"portrait\", \"portraitUpsideDown\", \"landscapeLeft\", \"landscapeRight\"]\nsupersonic.ui.screen.setAllowedRotations(options)\n```"
+  },
+  {
+    "params": [],
+    "name": "rotateTo",
+    "description": "Rotate the screen to one of the four preset orientations. Allowed rotations must be set with `supersonic.ui.screen.setAllowedRotations`, or the call to supersonic.ui.screen.rotate will fail.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved when the screen is rotated."
+    },
+    "usage": "```coffeescript\n# Shorthand\nsupersonic.ui.screen.rotateTo(\"landscapeLeft\")\n#Verbose\noptions =\n orientation: \"landscapeLeft\"\nsupersonic.ui.screen.rotateTo(options)\n```"
+  }
+]

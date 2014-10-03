@@ -1,0 +1,43 @@
+[
+  {
+    "params": [],
+    "name": "accelerometer",
+    "description": " provides access to the device's accelerometer. The accelerometer is a motion sensor that detects the change (delta) in movement relative to the current device orientation, in three dimensions along the x, y, and z axis."
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "Integer"
+        ],
+        "name": "frequency",
+        "description": "update interval in milliseconds (optional, defaults to 40)",
+        "optional": false
+      }
+    ],
+    "name": "watchAcceleration",
+    "description": "Returns a stream of acceleration updates.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Stream"
+      ],
+      "description": "Stream of acceleration updates"
+    },
+    "usage": "```coffeescript\nsupersonic.device.accelerometer.watchAcceleration().onValue( (acceleration) ->\n console.log('Acceleration X: '  + acceleration.x  + '\\n' +\n             'Acceleration Y: ' + acceleration.y + '\\n' +\n             'Acceleration Z: ' + acceleration.z + '\\n' +\n             'Timestamp: ' + acceleration.timestamp)\n)\n```"
+  },
+  {
+    "params": [],
+    "name": "getAcceleration",
+    "description": "Returns device's current acceleration.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise is resolved to the next available acceleration data. Will wait for data for an indeterminate time; use a timeout if required."
+    },
+    "usage": "```coffeescript\nsupersonic.device.accelerometer.getAcceleration().then( (acceleration) ->\n console.log('Acceleration X: '  + acceleration.x  + '\\n' +\n             'Acceleration Y: ' + acceleration.y + '\\n' +\n             'Acceleration Z: ' + acceleration.z + '\\n' +\n             'Timestamp: ' + acceleration.timestamp)\n)\n```"
+  }
+]

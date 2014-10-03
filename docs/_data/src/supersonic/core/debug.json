@@ -1,0 +1,15 @@
+[
+  {
+    "params": [],
+    "name": "ping",
+    "description": "Pings the native runtime.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "A promise that gets resolved once the ping is successful. Resolves with the string `\"Pong!\"`."
+    },
+    "usage": "```coffeescript\nsupersonic.debug.ping().then (response) ->\n  supersonic.logger.log response\n```"
+  }
+]

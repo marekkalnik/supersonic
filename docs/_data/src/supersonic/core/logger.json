@@ -1,0 +1,62 @@
+[
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "String"
+        ],
+        "name": "message",
+        "description": "Message to log.",
+        "optional": false
+      }
+    ],
+    "name": "info",
+    "usage": "```coffeescript\nsupersonic.logger.info(\"Just notifying you that X is going on\")\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "String"
+        ],
+        "name": "message",
+        "description": "Message to log.",
+        "optional": false
+      }
+    ],
+    "name": "warn",
+    "usage": "```coffeescript\nsupersonic.logger.warn(\"Something that probably should not be happening... is happening.\")\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "String"
+        ],
+        "name": "error",
+        "description": "Error message to log.",
+        "optional": false
+      }
+    ],
+    "name": "error",
+    "usage": "```coffeescript\nsupersonic.logger.error(\"Something failed\")\n```"
+  },
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "String"
+        ],
+        "name": "message",
+        "description": "Debug message to log.",
+        "optional": false
+      }
+    ],
+    "name": "debug",
+    "usage": "```coffeescript\nsupersonic.logger.debug(\"This information is here only for your debugging convenience\")\n```"
+  }
+]

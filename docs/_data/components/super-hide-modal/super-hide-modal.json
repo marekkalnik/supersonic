@@ -1,0 +1,10 @@
+[
+  {
+    "params": [],
+    "category": "webComponent",
+    "name": "super-hide-modal",
+    "description": "Hides a modal.",
+    "attribute": "action",
+    "usage": "```html\n<super-hide-modal action=\"click\">Open modal</super-hide-modal>\n```"
+  }
+]

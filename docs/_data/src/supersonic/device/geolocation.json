@@ -1,0 +1,33 @@
+[
+  {
+    "params": [],
+    "name": "geolocation",
+    "description": "Provides access to location data based on the device's GPS sensor or inferred from network signals."
+  },
+  {
+    "params": [],
+    "name": "watchPosition",
+    "description": "Returns a stream of position updates.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Stream"
+      ],
+      "description": "Stream of position updates"
+    },
+    "usage": "```coffeescript\nsupersonic.device.geolocation.watchPosition().onValue( (position) ->\n console.log('Latitude: '  + position.coords.latitude  + '\\n' +\n                       'Longitude: ' + position.coords.longitude + '\\n' +\n                       'Timestamp: ' + position.timestamp)\n)\n```"
+  },
+  {
+    "params": [],
+    "name": "getPosition",
+    "description": "Returns device's current position.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise is resolved to the next available position data. Will wait for data for an indeterminate time; use a timeout if required."
+    },
+    "usage": "```coffeescript\nsupersonic.device.geolocation.getPosition().then( (position) ->\n console.log('Latitude: '  + position.coords.latitude  + '\\n' +\n                       'Longitude: ' + position.coords.longitude + '\\n' +\n                       'Timestamp: ' + position.timestamp)\n)\n```"
+  }
+]

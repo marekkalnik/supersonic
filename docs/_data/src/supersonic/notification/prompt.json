@@ -1,0 +1,34 @@
+[
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "string"
+        ],
+        "name": "message",
+        "description": "confirm message.",
+        "optional": false
+      },
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "options",
+        "description": "an options object (optionals). The following properties are available: * `title`: dialog title (optional, defaults to \"Confirm\")\n* `buttonLabels`: array of strings specifying button labels (optional, defaults to [\"OK\",\"Cancel\"]).\n* `defaultText`: default textbox input value (optional, defaults to an empty string)",
+        "optional": false
+      }
+    ],
+    "name": "prompt",
+    "description": "Shows a native prompt dialog.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Promise"
+      ],
+      "description": "Promise that is resolved with an object as an argument. The argument object has the following properties: * `buttonIndex`: index of the pressed button\n* `input`: input string"
+    },
+    "usage": "```coffeescript\n# Basic usage\nsupersonic.notification.prompt(\"This is a prompt. Type something\")\n\n# With options\nsupersonic.notification.prompt(\"I'm a prompt!\", {\n  title: \"Custom Title\"\n  buttonLabels: [\"Yes\", \"No\", \"Cancel\"]\n  defaultText: \"Type here\"\n})\n```"
+  }
+]
