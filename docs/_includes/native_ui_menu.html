@@ -1,13 +1,13 @@
 {% for namespace in site.data.native_ui_index %}
 
 <li>
-  <a href="/supersonic/javascript/{{namespace.id}}">
+  <a href="/supersonic/native-ui/{{namespace.id}}">
     {{ namespace.name }}
   </a>
   <ul>
     {% for subpage in namespace.subpages %}
     <li>
-      <a href="#/supersonic/javascript/{{namespace.id}}/#{{subpage.id}}">
+      <a href="#/supersonic/native-ui/{{namespace.id}}/#{{subpage.id}}">
         {{ subpage.name }}
       </a>
     </li>
