@@ -1,7 +1,13 @@
 <div ng-controller="NavigationBarController" class="padding">
-  <ss-navigation-bar>
-    <ss-navigation-bar-title ng-bind="navBarTitle"></ss-navigation-bar-title>
-  </ss-navigation-bar>
+  <super-navigation-bar>
+    <super-left-buttons>
+      <super-navigation-bar-button>Left</super-navigation-bar-button>
+    </super-left-buttons>
+    <super-navigation-bar-title ng-bind="navBarTitle"></super-navigation-bar-title>
+    <super-right-buttons>
+      <super-navigation-bar-button>Right</super-navigation-bar-button>
+    </super-right-buttons>
+  </super-navigation-bar>
 
   <button class="button button-positive" ng-click="showNav()">SHOW NAV BAR</button>
   <button class="button button-assertive" ng-click="hideNav()">HIDE NAV BAR</button>
@@ -14,4 +20,5 @@
       <input class="text" ng-model="navBarTitle" />
     </label>
   </div>
+  <hr>
 </div>

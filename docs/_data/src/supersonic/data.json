@@ -1,0 +1,27 @@
+[
+  {
+    "params": [
+      {
+        "type": "param",
+        "types": [
+          "string"
+        ],
+        "name": "resourceName",
+        "description": "",
+        "optional": false
+      }
+    ],
+    "category": "core",
+    "name": "resource",
+    "function": true,
+    "description": "Allows access to cloud resources you have configured for your app through Steroids Connect.",
+    "returns": {
+      "type": "returns",
+      "types": [
+        "Resource"
+      ],
+      "description": ""
+    },
+    "usage": "```coffeescript\nsupersonic.data.resource(\"task\").findAll().then (tasks) ->\n  console.log \"Got tasks!\"\n```"
+  }
+]
