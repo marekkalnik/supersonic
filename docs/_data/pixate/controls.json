@@ -1,0 +1,1125 @@
+{
+    "navbar": {
+        "elementName": "navbar",
+        "properties": {
+            "transform": {
+                "syntax": "<transform>+"
+            },
+            "top": {
+                "syntax": "<length>"
+            },
+            "left": {
+                "syntax": "<length>"
+            },
+            "width": {
+                "syntax": "<length>"
+            },
+            "height": {
+                "syntax": "<length>"
+            },
+            "size": {
+                "syntax": "<size>"
+            },
+            "position": {
+                "syntax": "<size>"
+            },
+            "opacity": {
+                "syntax": "<number>"
+            },
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            },
+            "vertical-position-adjustment": {
+                "syntax": "<length>"
+            },
+            "color": {
+                "syntax": "<paint>",
+                "comment": "Deprecatedin1.1.Pleaseuse'color'onthe'title'childelement"
+            },
+            "-ios-tint-color": {
+                "syntax": "<paint>"
+            },
+            "text-shadow": {
+                "syntax": "<shadow>",
+                "comment": "Deprecatedin1.1.Pleaseuse'text-shadow'onthe'title'childelement"
+            },
+            "font-family": {
+                "syntax": "<string>",
+                "comment": "Deprecatedin1.1.Pleaseuse'font-family'onthe'title'childelement"
+            },
+            "font-size": {
+                "syntax": "<length>",
+                "comment": "Deprecatedin1.1.Pleaseuse'font-size'onthe'title'childelement"
+            },
+            "font-style": {
+                "syntax": "normal|italic|oblique",
+                "comment": "Deprecatedin1.1.Pleaseuse'font-style'onthe'title'childelement"
+            },
+            "font-weight": {
+                "syntax": "normal|bold|black|heavy|extra-bold|ultra-bold|semi-bold|demi-bold|medium|light|extra-thin|ultra-thin|thin|100|200|300|400|500|600|700|800|900",
+                "comment": "Deprecatedin1.1.Pleaseuse'font-weight'onthe'title'childelement"
+            },
+            "font-stretch": {
+                "syntax": "normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded",
+                "comment": "Deprecatedin1.1.Pleaseuse'font-stretch'onthe'title'childelement"
+            },
+            "shadow": {
+                "syntax": "<url>"
+            },
+            "shadow-size": {
+                "syntax": "<size>"
+            },
+            "shadow-inset": {
+                "syntax": "<inset>"
+            },
+            "shadow-padding": {
+                "syntax": "<number>"
+            },
+            "animation": {
+                "syntax": "<single-animation>#"
+            },
+            "animation-name": {
+                "syntax": "<name>#"
+            },
+            "animation-duration": {
+                "syntax": "<time>#"
+            },
+            "animation-timing-function": {
+                "syntax": "<timing-function>#"
+            },
+            "animation-iteration-count": {
+                "syntax": "<number>#"
+            },
+            "animation-direction": {
+                "syntax": "<direction>#"
+            },
+            "animation-play-state": {
+                "syntax": "<play-state>#"
+            },
+            "animation-delay": {
+                "syntax": "<time>#"
+            },
+            "animation-fill-mode": {
+                "syntax": "<fill-mode>#"
+            },
+            "background-position": {
+                "syntax": ""
+            },
+            "text-transform": {
+                "syntax": "lowercase|uppercase|capitalize"
+            }
+        }
+    },
+    "navbar.title": {
+        "elementName": "title",
+        "properties": {
+            "text-shadow": {
+                "syntax": "<shadow>"
+            },
+            "font-family": {
+                "syntax": "<string>"
+            },
+            "font-size": {
+                "syntax": "<length>"
+            },
+            "font-style": {
+                "syntax": "normal|italic|oblique"
+            },
+            "font-weight": {
+                "syntax": "normal|bold|black|heavy|extra-bold|ultra-bold|semi-bold|demi-bold|medium|light|extra-thin|ultra-thin|thin|100|200|300|400|500|600|700|800|900"
+            },
+            "font-stretch": {
+                "syntax": "normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded"
+            },
+            "color": {
+                "syntax": "<paint>"
+            },
+            "-ios-tint-color": {
+                "syntax": "<paint>"
+            }
+        }
+    },
+    "navbar.navbaritem": {
+        "elementName": "navigation-item",
+        "properties": {}
+    },
+    "navbar.back-indicator": {
+        "elementName": "back-indicator",
+        "properties": {
+            "opacity": {
+                "syntax": "<number>"
+            },
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            }
+        }
+    },
+    "navbar.back-indicator-mask": {
+        "elementName": "back-indicator-mask",
+        "properties": {
+            "opacity": {
+                "syntax": "<number>"
+            },
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            }
+        }
+    },
+    "navbar.button-appearance": {
+        "elementName": "button-appearance",
+        "properties": {
+            "opacity": {
+                "syntax": "<number>"
+            },
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            },
+            "font-family": {
+                "syntax": "<string>"
+            },
+            "font-size": {
+                "syntax": "<length>"
+            },
+            "font-style": {
+                "syntax": "normal|italic|oblique"
+            },
+            "font-weight": {
+                "syntax": "normal|bold|black|heavy|extra-bold|ultra-bold|semi-bold|demi-bold|medium|light|extra-thin|ultra-thin|thin|100|200|300|400|500|600|700|800|900"
+            },
+            "font-stretch": {
+                "syntax": "normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded"
+            },
+            "color": {
+                "syntax": "<paint>"
+            },
+            "-ios-tint-color": {
+                "syntax": "<paint>"
+            },
+            "ios-tint-color": {
+                "syntax": "<color>"
+            }
+        }
+    },
+    "navbar.back-button-appearance": {
+        "elementName": "back-button-appearance",
+        "properties": {
+            "opacity": {
+                "syntax": "<number>"
+            },
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            }
+        }
+    },
+    "tabbar": {
+        "elementName": "tabbar",
+        "properties": {
+            "transform": {
+                "syntax": "<transform>+"
+            },
+            "top": {
+                "syntax": "<length>"
+            },
+            "left": {
+                "syntax": "<length>"
+            },
+            "width": {
+                "syntax": "<length>"
+            },
+            "height": {
+                "syntax": "<length>"
+            },
+            "size": {
+                "syntax": "<size>"
+            },
+            "position": {
+                "syntax": "<size>"
+            },
+            "opacity": {
+                "syntax": "<number>"
+            },
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            },
+            "shadow": {
+                "syntax": "<url>"
+            },
+            "shadow-size": {
+                "syntax": "<size>"
+            },
+            "shadow-inset": {
+                "syntax": "<inset>"
+            },
+            "shadow-padding": {
+                "syntax": "<number>"
+            },
+            "animation": {
+                "syntax": "<single-animation>#"
+            },
+            "animation-name": {
+                "syntax": "<name>#"
+            },
+            "animation-duration": {
+                "syntax": "<time>#"
+            },
+            "animation-timing-function": {
+                "syntax": "<timing-function>#"
+            },
+            "animation-iteration-count": {
+                "syntax": "<number>#"
+            },
+            "animation-direction": {
+                "syntax": "<direction>#"
+            },
+            "animation-play-state": {
+                "syntax": "<play-state>#"
+            },
+            "animation-delay": {
+                "syntax": "<time>#"
+            },
+            "animation-fill-mode": {
+                "syntax": "<fill-mode>#"
+            },
+            "-ios-tint-color": {
+                "syntax": "<paint>"
+            },
+            "color": {
+                "syntax": "<color>"
+            },
+            "selected-color": {
+                "syntax": "<color>"
+            }
+        }
+    },
+    "tabbar.tabbar-item": {
+        "elementName": "tabbar-item",
+        "properties": {}
+    },
+    "tabbar.selection": {
+        "elementName": "selection",
+        "properties": {
+            "shape": {
+                "syntax": "ellipse|rectangle|arrow-button-left|arrow-button-right"
+            },
+            "background-color": {
+                "syntax": "<paint>"
+            },
+            "background-size": {
+                "syntax": "<size>"
+            },
+            "background-inset": {
+                "syntax": "<inset>"
+            },
+            "background-inset-top": {
+                "syntax": "<length>"
+            },
+            "background-inset-right": {
+                "syntax": "<length>"
+            },
+            "background-inset-bottom": {
+                "syntax": "<length>"
+            },
+            "background-inset-left": {
+                "syntax": "<length>"
+            },
+            "background-image": {
+                "syntax": "<url>"
+            },
+            "background-padding": {
+                "syntax": "<padding>"
+            },
+            "background-top-padding": {
+                "syntax": "<length>"
+            },
+            "background-right-padding": {
+                "syntax": "<length>"
+            },
+            "background-bottom-padding": {
+                "syntax": "<length>"
+            },
+            "background-left-padding": {
+                "syntax": "<length>"
+            },
+            "border": {
+                "syntax": "<width>||<border-style>||<paint>"
+            },
+            "border-top": {
+                "syntax": ""
+            },
+            "border-right": {
+                "syntax": ""
+            },
+            "border-bottom": {
+                "syntax": ""
+            },
+            "border-left": {
+                "syntax": ""
+            },
+            "border-radius": {
+                "syntax": "<size>"
+            },
+            "border-top-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-top-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-right-radius": {
+                "syntax": "<length>"
+            },
+            "border-bottom-left-radius": {
+                "syntax": "<length>"
+            },
+            "border-width": {
+                "syntax": "<length>"
+            },
+            "border-top-width": {
+                "syntax": ""
+            },
+            "border-right-width": {
+                "syntax": ""
+            },
+            "border-bottom-width": {
+                "syntax": ""
+            },
+            "border-left-width": {
+                "syntax": ""
+            },
+            "border-color": {
+                "syntax": "<paint>"
+            },
+            "border-top-color": {
+                "syntax": ""
+            },
+            "border-right-color": {
+                "syntax": ""
+            },
+            "border-bottom-color": {
+                "syntax": ""
+            },
+            "border-left-color": {
+                "syntax": ""
+            },
+            "border-style": {
+                "syntax": "<border-style>"
+            },
+            "border-top-style": {
+                "syntax": ""
+            },
+            "border-right-style": {
+                "syntax": ""
+            },
+            "border-bottom-style": {
+                "syntax": ""
+            },
+            "border-left-style": {
+                "syntax": ""
+            },
+            "box-shadow": {
+                "syntax": "<shadow>"
+            }
+        }
+    }
+}
