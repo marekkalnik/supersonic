@@ -7,6 +7,8 @@ angular
     $scope.hideNav = ->
       document.querySelector('super-navigation-bar').setAttribute("style", "display: none;")
 
+    $scope.navBarTitle = "Title"
+
     $scope.setNavBarTitle = ->
       $scope.navBarTitle = "New title"
 
