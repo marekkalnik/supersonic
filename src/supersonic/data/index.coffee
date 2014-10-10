@@ -1,6 +1,6 @@
 Promise = require 'bluebird'
 
-module.exports = (steroids, log) -> 
+module.exports = (steroids, log) ->
   ###
    # @category core
    # @module data
