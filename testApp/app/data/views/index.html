@@ -1,0 +1,33 @@
+<div ng-controller="IndexController">
+  <ss-navigation-bar>
+    <ss-navigation-bar-title>
+      Data tests
+    </ss-navigation-bar-title>
+  </ss-navigation-bar>
+
+  <div class="card padding">
+    <h1>data.channel tests</h1>
+    <button
+      class="button button-block"
+      ng-click="createViewAndStart()">
+      Create DataChannelView and start it
+    </button>
+    <ul>
+      <li>DataChannelView started: {{dataChannelView}}</li>
+    </ul>
+    <button
+      class="button button-block"
+      ng-click="sendMessage()">
+      Send message to DataChannelView via DataChannelView channel
+    </button>
+    <ul>
+      <li>Number of messages sent: {{messagePublished}}</li>
+    </ul>
+    <button
+      class="button button-block"
+      ng-click="openDataChannelView()">
+      Open DataChannelView
+    </button>
+  </div>
+  
+</div>

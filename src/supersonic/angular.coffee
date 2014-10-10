@@ -23,5 +23,6 @@ module.exports = (angular) ->
         notification: qifyAll supersonic.notification
         device: supersonicDevice
         ui: supersonic.ui
+        date: supersonic.data
       }
     )
