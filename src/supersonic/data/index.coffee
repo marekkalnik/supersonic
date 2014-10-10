@@ -1,6 +1,6 @@
-resource = require 'steroids-data/lib/steroids/data/resource'
+Promise = require 'bluebird'
 
-module.exports = {
+module.exports = (steroids, log) -> 
   ###
    # @category core
    # @module data
@@ -16,5 +16,6 @@ module.exports = {
    #   console.log "Got tasks!"
    # ```
   ###
-  resource
-}
+  resource: require 'steroids-data/lib/steroids/data/resource'
+  channel: require("./channel")(steroids, log)
+
