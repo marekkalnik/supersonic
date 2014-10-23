@@ -46,21 +46,21 @@ SuperNavigationBarPrototype.createSupersonicButtons = (buttons) ->
 SuperNavigationBarPrototype.updateNavBarTitle = ->
   if this.title? && this.title.length is 0
     this.title = " " # hack for not being able to clear the title with empty string
-  options = 
+  options =
     title: this.title
   supersonic.ui.navigationBar.update(options)
 
 SuperNavigationBarPrototype.updateNavBarLeftButtons = ->
   leftButtons = this.createSupersonicButtons(this.leftButtons)
   options =
-    buttons: 
+    buttons:
       left: leftButtons
   supersonic.ui.navigationBar.update(options)
 
 SuperNavigationBarPrototype.updateNavBarRightButtons = ->
   rightButtons = this.createSupersonicButtons(this.rightButtons)
   options =
-    buttons: 
+    buttons:
       right: rightButtons
   supersonic.ui.navigationBar.update(options)
 
@@ -103,5 +103,5 @@ SuperNavigationBarPrototype.detachedCallback = ->
   # Hide the navbar when this node leaves the DOM
   steroids.view.navigationBar.hide()
 
-document.registerElement "super-navigation-bar",
+document.registerElement "super-navbar",
   prototype: SuperNavigationBarPrototype

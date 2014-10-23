@@ -11,12 +11,12 @@ SuperNavigationBarTitlePrototype = Object.create HTMLElement.prototype
 
 SuperNavigationBarTitlePrototype.setParentTitle = (title)->
   # Check for parent element existence
-  if this.parentNode.nodeName == "SUPER-NAVIGATION-BAR"
+  if this.parentNode.nodeName == "SUPER-NAVBAR"
     # Inform parent node of change - it has a setter that triggers a change event
     this.parentNode.title = title
   else
     # Oops, we have a malformed DOM
-    throw new Error "No super-navigation-bar component as parent"
+    throw new Error "No super-navbar component as parent"
 
 # When a new element is detected in the DOM
 SuperNavigationBarTitlePrototype.createdCallback = ->
@@ -34,5 +34,5 @@ SuperNavigationBarTitlePrototype.detachedCallback = ->
   # Dispose of observer
   observer.disconnect()
 
-document.registerElement "super-navigation-bar-title",
+document.registerElement "super-navbar-title",
   prototype: SuperNavigationBarTitlePrototype

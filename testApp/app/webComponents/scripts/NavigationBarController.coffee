@@ -2,10 +2,10 @@ angular
   .module('webComponents')
   .controller 'NavigationBarController', ($scope) ->
     $scope.showNav = ->
-      document.querySelector('super-navigation-bar').setAttribute("style", "display: block;")
+      document.querySelector('super-navbar').setAttribute("style", "display: block;")
 
     $scope.hideNav = ->
-      document.querySelector('super-navigation-bar').setAttribute("style", "display: none;")
+      document.querySelector('super-navbar').setAttribute("style", "display: none;")
 
     $scope.navBarTitle = "Title"
 

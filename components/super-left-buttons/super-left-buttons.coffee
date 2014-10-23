@@ -1,10 +1,10 @@
 onContentChanged = (node)->
   children = node.children
-  
+
   leftButtons = []
-  
+
   for child in children
-    if child.nodeName == "SUPER-NAVIGATION-BAR-BUTTON"
+    if child.nodeName == "SUPER-NAVBAR-BUTTON"
       button = {}
       button.title = child.textContent
       leftButtons.push button
@@ -21,12 +21,12 @@ SuperLeftButtonsPrototype = Object.create HTMLElement.prototype
 
 SuperLeftButtonsPrototype.setParentButtons = (leftButtons)->
   # Check for parent element existence
-  if this.parentNode.nodeName == "SUPER-NAVIGATION-BAR"
+  if this.parentNode.nodeName == "SUPER-NAVBAR"
     # Inform parent node of change - it has a setter that triggers a change event
     this.parentNode.leftButtons = leftButtons
   else
     # Oops, we have a malformed DOM
-    throw new Error "No super-navigation-bar component as parent"
+    throw new Error "No super-navbar component as parent"
 
 # When a new element is detected in the DOM
 SuperLeftButtonsPrototype.createdCallback = ->

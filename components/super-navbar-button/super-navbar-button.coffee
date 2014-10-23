@@ -1,4 +1,4 @@
 SuperNavigationBarButtonPrototype = Object.create HTMLElement.prototype
 
-document.registerElement "super-navigation-bar-button",
+document.registerElement "super-navbar-button",
   prototype: SuperNavigationBarButtonPrototype
