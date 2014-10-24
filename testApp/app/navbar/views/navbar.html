@@ -1,0 +1,63 @@
+<div ng-controller="NavbarController" class="padding">
+
+  <!-- The actual navbar -->
+
+  <super-navbar>
+    <super-navbar-title ng-bind="navbarTitle"></super-navbar-title>
+    <super-navbar-button navigate-to="media#index" side="right">Navi</super-navbar-button>
+    <super-navbar-button ng-click="navbarButtonCallback('tesdi')" side="right">CB</super-navbar-button>
+  </super-navbar>
+
+  <!-- Navbar visibility settings -->
+
+  <div class="list">
+    <div class="item item-divider">
+      Change visibility
+    </div>
+    <div class="item item-icon-left" ng-click="showNavbar()">
+      <i class="icon ion-eye"></i>
+      Show <code>navbar</code>
+    </div>
+    <div class="item item-icon-left" ng-click="hideNavbar()">
+      <i class="icon ion-eye-disabled"></i>
+      Hide <code>navbar</code>
+    </div>
+  </div>
+
+  <!-- Navbar title settings -->
+
+  <div class="list list-inset">
+    <div class="item item-divider">
+      Navbar title
+    </div>
+    <label class="item item-input">
+      <input class="text" ng-model="navbarTitle">
+    </label>
+  </div>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <button class="button button-positive" ng-click="showNav()">SHOW NAV BAR</button>
+  <button class="button button-assertive" ng-click="hideNav()">HIDE NAV BAR</button>
+  <hr>
+  <button class="button button-positive" ng-click="setNavbarTitle()">SET NAV BAR TITLE</button>
+  <button class="button button-assertive" ng-click="removeNavbarTitle()">REMOVE NAV BAR TITLE</button>
+
+  <div class="list">
+    <label class="item item-input">
+      <input class="text" ng-model="navbarTitle" />
+    </label>
+  </div>
+  <hr>
+</div>

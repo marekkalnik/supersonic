@@ -1,0 +1,20 @@
+<div ng-controller="NavbarTitleController" class="padding">
+
+  <!-- The actual navbar -->
+
+  <super-navbar>
+    <super-navbar-title ng-bind="navbarTitle"></super-navbar-title>
+  </super-navbar>
+
+  <!-- Navbar title settings -->
+
+  <div class="list list-inset">
+    <div class="item item-divider">
+      Navbar title
+    </div>
+    <label class="item item-input">
+      <input class="text" ng-model="navbarTitle">
+    </label>
+  </div>
+
+</div>

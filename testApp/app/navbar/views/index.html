@@ -1,0 +1,25 @@
+<div ng-controller="IndexController">
+  <super-navbar>
+    <super-navbar-title>
+      Navbar
+    </super-navbar-title>
+  </super-navbar>
+
+  <ul>
+    <super-navigate location="navbar#title" preload="true">
+      <li class="item item-icon-right">
+        With custom title <i class="icon ion-ios7-arrow-right"></i>
+      </li>
+    </super-navigate>
+    <super-navigate location="navbar#showHide" preload="true">
+      <li class="item item-icon-right">
+        Show / hide <i class="icon ion-ios7-arrow-right"></i>
+      </li>
+    </super-navigate>
+    <super-navigate location="navbar#buttons" preload="true">
+      <li class="item item-icon-right">
+        Buttons w/ callbacks <i class="icon ion-ios7-arrow-right"></i>
+      </li>
+    </super-navigate>
+  </ul>
+</div>

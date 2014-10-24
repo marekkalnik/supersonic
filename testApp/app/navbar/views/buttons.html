@@ -1,0 +1,20 @@
+<div ng-controller="NavbarButtonsController" class="padding">
+
+  <super-navbar>
+    <super-navbar-button navigate-to="media#index" side="right">Navigate</super-navbar-button>
+    <super-navbar-button ng-click="navbarButtonCallback()" side="right">Callback</super-navbar-button>
+  </super-navbar>
+
+  <br>
+
+  <h1>Clicks: <b>{{timesButtonClicked}}</b></h1>
+
+  <br><hr><br>
+
+  <p>Click on button titled "<b>Callback</b>" to see a button with <b>ng-click</b> callback in action.</p>
+
+  <br><hr><br>
+
+  <p>Click on button titled "<b>Navigate</b>" to see a button with Supersonic UI navigation in action.</p>
+
+</div>
