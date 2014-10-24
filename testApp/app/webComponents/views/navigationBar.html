@@ -1,12 +1,9 @@
 <div ng-controller="NavigationBarController" class="padding">
+
   <super-navbar>
-    <super-left-buttons>
-      <super-navbar-button>Left</super-navbar-button>
-    </super-left-buttons>
     <super-navbar-title ng-bind="navBarTitle"></super-navbar-title>
-    <super-right-buttons>
-      <super-navbar-button>Right</super-navbar-button>
-    </super-right-buttons>
+    <super-navbar-button side="left">Left</super-navbar-button>
+    <super-navbar-button side="right">Right</super-navbar-button>
   </super-navbar>
 
   <button class="button button-positive" ng-click="showNav()">SHOW NAV BAR</button>
