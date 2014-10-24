@@ -115,11 +115,11 @@ The `--watch` argument tells the Steroids console to watch for changes in your p
 Now we're ready to re-add the navigation bar. To do so, open the `myProject/app/common/views/index.html` file again and add the following above the previously inserted `<div>` tag:
 
 ```html
-<ss-navigation-bar>
-  <ss-navigation-bar-title>
+<super-navbar>
+  <super-navbar-title>
     Hello World
-  </ss-navigation-bar-title>
-</ss-navigation-bar>
+  </super-navbar-title>
+</super-navbar>
 ```
 
 Now, just save the file and take a look at your Scanner, it should update nearly instantly with a brand new navigation bar, without going through the "reloading" screen at all. You can change any of the basic HTML content like this and get instant results, but notice that changes to the project structure like new files or layout changes require a "full refresh" to take effect. To trigger a full change, type "r" in the Steroids console and press enter.

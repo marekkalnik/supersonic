@@ -33,9 +33,9 @@ You don't need to include the Javascript, CSS and Web Components separately, unl
 
 Here's a sample of what Supersonic can do. Try this with your app on Steroids:
 
-    <ss-navigation-bar>
-        <ss-navigation-bar-title>Wow! It's mach 1!</ss-navigation-bar-title>
-    </ss-navigation-bar>
+    <super-navbar>
+        <super-navbar-title>Wow! It's mach 1!</super-navbar-title>
+    </super-navbar>
 
 Pow, there's a native navigation bar and you didn't have to write a line of Javascript.
 

@@ -1,9 +1,9 @@
 <div ng-controller="IndexController">
-  <ss-navigation-bar>
-    <ss-navigation-bar-title>
+  <super-navbar>
+    <super-navbar-title>
       Media tests
-    </ss-navigation-bar-title>
-  </ss-navigation-bar>
+    </super-navbar-title>
+  </super-navbar>
 
   <div class="card padding">
     <h1>camera.takePicture tests</h1>
@@ -31,6 +31,19 @@
       <li>picture URL: {{fromLibraryURL}}</li>
     </ul>
     <img ng-src="{{fromLibraryPath}}" alt="">
+  </div>
+
+  <div class="card padding">
+    <h1>audio.play tests</h1>
+    <button
+      class="button button-block"
+      ng-repeat="test in playAudioTests"
+      ng-click="testPlayAudio(test.options)">
+      {{test.title}}
+    </button>
+    <ul>
+      <li>Number of times played: {{played}}</li>
+    </ul>
   </div>
 
 </div>

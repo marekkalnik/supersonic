@@ -114,3 +114,7 @@ angular
         (message) ->
           alert "Could not hide status bar! \n\n #{JSON.stringify(message)}"
       )
+
+    $scope.alerttaa = (msg) ->
+      alert msg
+

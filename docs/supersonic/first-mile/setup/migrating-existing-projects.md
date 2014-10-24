@@ -30,9 +30,9 @@ You don't need to include the Javascript, CSS and Web Components separately, unl
 Since you are an existing Steroids user, you are most likely familiar with the `steroids.view.navigationBar` API. While handy, it does feel a little off having to define and set UI elements from purely JavaScript. In Supersonic, you can create a navigation bar like this:
 
 ```html
-<ss-navigation-bar>
-    <ss-navigation-bar-title>Wow! It's mach 1!</ss-navigation-bar-title>
-</ss-navigation-bar>
+<super-navbar>
+    <super-navbar-title>Wow! It's mach 1!</super-navbar-title>
+</super-navbar>
 ```
 
 Pow, there's a native navigation bar and you didn't have to write a line of Javascript. That's just the tip of the iceberg too, for the rest of the story, check out the [Supersonic manual](http://supersonic.testgyver.com/docs).

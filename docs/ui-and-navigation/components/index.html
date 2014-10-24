@@ -53,13 +53,13 @@ body_extra_css_classes: device-preview-page
   <h3 class="title"><a href="#navigation-bar">Navigation Bar</a></h3>
 
   <p>
-    Navigation bar is a native UI component that is enabled by including the <code>&lt;ss-navigation-bar&gt;</code> element on your page. It contains a title label, set by the <code>&lt;ss-navigation-bar-title&gt;</code> child element.
+    Navigation bar is a native UI component that is enabled by including the <code>&lt;super-navbar&gt;</code> element on your page. It contains a title label, set by the <code>&lt;super-navbar-title&gt;</code> child element.
   </p>
 
 {% highlight html %}
-<ss-navigation-bar>
-  <ss-navigation-bar-title>Awesome App</ss-navigation-bar-title>
-</ss-navigation-bar>
+<super-navbar>
+  <super-navbar-title>Awesome App</super-navbar-title>
+</super-navbar>
 {% endhighlight %}
 
   <h4>Usage with AngularJS</h4>
@@ -69,9 +69,9 @@ body_extra_css_classes: device-preview-page
   </p>
 
 {% highlight html %}
-<ss-navigation-bar>
-  <ss-navigation-bar ng-bind="navBarTitle"></ss-navigation-bar-title>
-</ss-navigation-bar>
+<super-navbar>
+  <super-navbar ng-bind="navBarTitle"></super-navbar-title>
+</super-navbar>
 
 <div class="list">
   <label class="item item-input">
