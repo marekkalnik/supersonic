@@ -1,3 +1,22 @@
+###
+ # @category webComponent
+ # @name <super-navbar-title>
+ # @component
+ # @description
+ # Component used to add title on app navigation bar. Must be a child of <super-navbar>.
+ # @usageHtml
+ # <super-navbar-title>This is the title</super-navbar-title>
+ # @exampleHtml
+ # <!-- Full example including the navbar itself -->
+ # <super-navbar>
+ #   <super-navbar-title>This is the title</super-navbar-title>
+ # </super-navbar>
+ #
+ # <!-- Full example using ng-bind for title value -->
+ # <super-navbar>
+ #   <super-navbar-title ng-bind="titleFromScope"></super-navbar-title>
+ # </super-navbar>
+###
 onContentChanged = (node)->
   node.setParentTitle node.textContent
 

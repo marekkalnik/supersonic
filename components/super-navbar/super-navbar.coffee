@@ -1,3 +1,19 @@
+###
+ # @category webComponent
+ # @name <super-navbar>
+ # @component
+ # @description
+ # Component used to display a view-specific native navbar. Navbar can contain super-navbar-title and super-navbar-button components.
+ # @usageHtml
+ # <super-navbar></super-navbar>
+ # @exampleHtml
+ # <!-- Navbar with a title -->
+ # <super-navbar>
+ #
+ #   <super-navbar-title>I'm native!</super-navbar-title>
+ #
+ # </super-navbar>
+###
 onStyleChanged = (node)->
   if node.isHidden()
     node.hide()

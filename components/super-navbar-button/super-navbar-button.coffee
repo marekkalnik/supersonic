@@ -1,3 +1,27 @@
+###
+ # @category webComponent
+ # @name <super-navbar-button>
+ # @component
+ # @description
+ # A button that will be displayed on the view navbar.
+ # @attribute side="left" Used to set button position on navbar. Allowed values are "left" and "right".
+ # @attribute navigate-to="moduleName#viewName" Simple way to use Supersonic UI navigation with your navbar button. If this is not set, any attached "click" callback will be used instead.
+ # @usageHtml
+ # <super-navbar-button navigate-to="moduleName#viewName" side="left">Title<super-navbar-button>
+ # @exampleHtml
+ # <super-navbar>
+ #
+ #   <!-- Button using Supersonic UI navigation -->
+ #   <super-navbar-button navigate-to="moduleName#viewName">Title<super-navbar-button>
+ #
+ #   <!-- Button using Angular callback -->
+ #   <super-navbar-button ng-click="myFunction()">Title<super-navbar-button>
+ #
+ #   <!-- Button on right side of navbar -->
+ #   <super-navbar-button side="right">Title<super-navbar-button>
+ #
+ # </super-navbar>
+###
 observer = new MutationObserver (mutations) ->
   for mutation in mutations
     # If the mutation is for children in this element
