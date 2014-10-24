@@ -26,21 +26,15 @@ Object.defineProperty SuperNavbarPrototype, "title",
   get: ->
     this._title
 
-Object.defineProperty SuperNavbarPrototype, "leftButtons",
-  set: (leftButtons)->
-    this._leftButtons = leftButtons
-    this.onLeftButtonsChanged()
+Object.defineProperty SuperNavbarPrototype, "buttons",
+  set: (buttons)->
+    this.setButtons buttons
 
   get: ->
-    this._leftButtons
-
-Object.defineProperty SuperNavbarPrototype, "rightButtons",
-  set: (rightButtons)->
-    this._rightButtons = rightButtons
-    this.onRightButtonsChanged()
-
-  get: ->
-    this._rightButtons
+    {
+      left: this._leftButtons
+      right: this._rightButtons
+    }
 
 ###
 DEFINE METHODS
@@ -107,12 +101,13 @@ SuperNavbarPrototype._removeButtonSilently = (button) ->
     return
 
 # Batch set function
-SuperNavbarPrototype.setButtons = (buttons, side="left") ->
-  if side is "right" then this._rightButtons = buttons || []
-  else this._leftButtons = buttons || []
+SuperNavbarPrototype.setButtons = (buttons) ->
+  this._leftButtons = buttons.left
+  this._rightButtons = buttons.right
   this._updateButtons()
 
 SuperNavbarPrototype._updateButtons = ->
+  return if this.isHidden()
   # Set base for options
   options =
     buttons:
@@ -127,12 +122,6 @@ DEFINE CALLBACKS
 
 SuperNavbarPrototype.onTitleChanged = ->
   this.updateNavBarTitle() unless this.isHidden()
-
-SuperNavbarPrototype.onLeftButtonsChanged = ->
-  this.updateNavBarLeftButtons() unless this.isHidden()
-
-SuperNavbarPrototype.onRightButtonsChanged = ->
-  this.updateNavBarRightButtons() unless this.isHidden()
 
 # What is the difference between attached and created?
 SuperNavbarPrototype.attachedCallback = ->
