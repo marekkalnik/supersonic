@@ -5,14 +5,14 @@
  # @description
  # A button that will be displayed on the view navbar.
  # @attribute side="left" Used to set button position on navbar. Allowed values are "left" and "right".
- # @attribute navigate-to="moduleName#viewName" Simple way to use Supersonic UI navigation with your navbar button. If this is not set, any attached "click" callback will be used instead.
+ # @attribute location="moduleName#viewName" Simple way to use Supersonic UI navigation with your navbar button. If this is not set, any attached "click" callback will be used instead.
  # @usageHtml
- # <super-navbar-button navigate-to="moduleName#viewName" side="left">Title<super-navbar-button>
+ # <super-navbar-button location="moduleName#viewName" side="left">Title<super-navbar-button>
  # @exampleHtml
  # <super-navbar>
  #
  #   <!-- Button using Supersonic UI navigation -->
- #   <super-navbar-button navigate-to="moduleName#viewName">Title<super-navbar-button>
+ #   <super-navbar-button location="moduleName#viewName">Title<super-navbar-button>
  #
  #   <!-- Button using Angular callback -->
  #   <super-navbar-button ng-click="myFunction()">Title<super-navbar-button>
@@ -105,8 +105,8 @@ SuperNavbarButtonPrototype.createdCallback = ->
   this._onTap = () =>
     this.click();
 
-  if this.getAttribute("navigate-to") and this.getAttribute("navigate-to").match(/.+#.+/i)
-    view = supersonic.ui.view this.getAttribute("navigate-to")
+  if this.getAttribute("location") and this.getAttribute("location").match(/.+#.+/i)
+    view = supersonic.ui.view this.getAttribute("location")
     view.start()
     this._onTap = () ->
       supersonic.ui.layer.push view
