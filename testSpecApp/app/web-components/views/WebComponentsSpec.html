@@ -1,26 +1,55 @@
 <script type="text/javascript" src="/app/web-components.js"></script>
 
-<super-show-modal id="super-show-modal-route" location="web-components#super-hide-modal">
+<!-- MODAL -->
+
+<super-show-modal
+  id="super-show-modal-route"
+  location="web-components#super-hide-modal">
 </super-show-modal>
-<super-show-modal id="super-show-modal-url" location="http://localhost/app/web-components/super-hide-modal.html">
+
+<super-show-modal
+  id="super-show-modal-url"
+  location="http://localhost/app/web-components/super-hide-modal.html">
 </super-show-modal>
-<super-show-modal id="super-show-modal-change-location" location="null">
+
+<super-show-modal
+  id="super-show-modal-change-location"
+  location="null">
 </super-show-modal>
+
 <super-show-modal
   id="super-show-modal-touchstart"
   location="web-components#super-hide-modal-touchstart"
   action="touchstart">
 </super-show-modal>
 
+<!-- NAVIGATE -->
 
-<super-navigate id="super-navigate-route" location="web-components#super-navigate-back">
+<super-navigate
+  id="super-navigate-route"
+  location="web-components#super-navigate-back">
 </super-navigate>
-<super-navigate id="super-navigate-url" location="http://localhost/app/web-components/super-navigate-back.html">
+
+<super-navigate
+  id="super-navigate-url"
+  location="http://localhost/app/web-components/super-navigate-back.html">
 </super-navigate>
-<super-navigate id="super-navigate-change-location" location="null">
+
+<super-navigate
+  id="super-navigate-change-location"
+  location="null">
 </super-navigate>
+
 <super-navigate
   id="super-navigate-touchstart"
+  location="web-components#super-navigate-back-touchstart"
+  action="touchstart">
+</super-navigate>
+
+<!-- NAVBAR -->
+
+<super-navigate
+  id="super-navbar-show-and-hide"
   location="web-components#super-navigate-back-touchstart"
   action="touchstart">
 </super-navigate>
