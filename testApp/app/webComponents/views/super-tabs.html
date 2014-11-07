@@ -1,0 +1,11 @@
+<div ng-controller="TabsController">
+  <super-navbar>
+    <super-navbar-title>
+      Modal
+    </super-navbar-title>
+  </super-navbar>
+
+  <super-tabs ng-show="showTabs"></super-tabs>
+
+  <button class="button button-block" ng-click="showTabs=!showTabs">Toggle super-tabs element show (currently {{showTabs}})</button>
+</div>
