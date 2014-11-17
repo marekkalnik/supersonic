@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APP=supersonic
+APP=docs
 
 usage() { echo "Usage: $0 [-e <appgyver.com|testgyver.com|devgyver.com>]" 1>&2; exit 1; }
 
