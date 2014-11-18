@@ -38,13 +38,13 @@ The navigation bar has two main functions:
   - It displays a **title** and optional **navigation bar buttons** for the current view
   - When applicable, it provides you with an automatic **back button** for going back in the navigation stack
 
-To learn more about how the navigation stack works, please see the [Navigation Stack](/ui-and-navigation/navigation/navigation-stack) guide.
+To learn more about how the navigation stack works, please see the [Navigation Stack](/supersonic/guides/navigation/) guide.
 </section>
 
 <section class="docs-section" id="super-navbar">
 ## Using `<super-navbar>``
 
-The `<super-navbar>` HTML element is a [web component](/overview/web-components/) that can be used to declaratively define the navigation bar in your app. Adding the `<super-navbar>` element on a page will display the navigation bar, and the `<super-navbar-title>` child element will allow you to define a title text for your view.
+The `<super-navbar>` HTML element is a [web component](/supersonic/guides/technical-concepts/web-components/) that can be used to declaratively define the navigation bar in your app. Adding the `<super-navbar>` element on a page will display the navigation bar, and the `<super-navbar-title>` child element will allow you to define a title text for your view.
 
 ```html
 <super-navbar>
