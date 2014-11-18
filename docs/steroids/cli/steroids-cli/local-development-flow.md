@@ -31,10 +31,10 @@ Ensure that your mobile device and your computer are in the same Wi-Fi network (
 
 The Steroids Development Server runs a file watcher by default. If you modify a file in your project, the Steroids Development Server will detect the change and reload your app to show the changes.
 
-To disable the file watcher, run your app with the `--watch=false` flag:
+To disable the file watcher, run your app with the `--no-watch` flag:
 
 ```bash
-steroids connect --watch=false
+steroids connect --no-watch
 ```
 
 You can also exclude specific files by providing a list of comma-separated paths for the `--watchExclude` flag.
@@ -52,20 +52,24 @@ Instead, the Steroids Development Server serves your app's files via a local web
 
 Thus, each WebView fetches the HTML page (and all other assets) from the Development  Server before displaying it. This enables lightning-fast updates by allowing us to use LiveReload.
 
-## Reloading your App with LiveReload
-
-When you change regular project HTML, CSS and JS files, your app updates instantly without any loading screens. This is caused by a special [LiveReload](http://livereload.com/) implementation in the AppGyver Scanner. In short, when a reload is requested, the Steroids Development Server sends a message to the Scanner app, which then instructs each WebView to reload itself.
-
-Since the local web server on your computer is always serving the latest version of your app (the contents of the `dist/` folder, to be exact), the refreshed page will show your changes.
-
-You can also initiate a LiveReload by pressing enter in the Steroids Development Server console.
-
 ## Full Reload
 
-The exception is when you make changes to your project's config files (`config/app.coffee` and `config/structure.coffee`). Since they are processed at app load, the whole app needs to be restarted after the changes. (Note that this doesn't mean you have to shut down the actual AppGyver Scanner app – we handle the restart process internally.)
+A full reload is required when you make changes to your project's config files (`config/app.coffee` and `config/structure.coffee`). Since they are processed at app load, the whole app needs to be restarted after the changes. (Note that this doesn't mean you have to shut down the actual AppGyver Scanner app – we handle the restart process internally.)
 
 When you change the files in the `config/` folder, a full reload is triggered. The current app state is discarded and a loading screen is shown. After a moment, the app starts with the modified configs.
 
-You can initiate a full reload manually by typing `r` or `reload` in the Steroids Development Console and pressing enter.
+You can initiate a full reload manually by pressing enter in the Steroids Development Console.
+
+## Reloading your App with LiveReload
+
+By default, the Steroids Development Server triggers a full reload every time your project files change. However, as noted above, this is only really required when the project's config files are changed. When you change regular project HTML, CSS and JS files, your app can refresh itself automatically. To have your app update instantly without any loading screens, you can use the `--livereload` switch.
+
+```bash
+devroids connect --livereload
+```
+
+This is caused by a special [LiveReload](http://livereload.com/) implementation in the AppGyver Scanner. In short, when a reload is requested, the Steroids Development Server sends a message to the Scanner app, which then instructs each WebView to reload itself.
+
+Since the local web server on your computer is always serving the latest version of your app (the contents of the `dist/` folder, to be exact), the refreshed page will show your changes.
 
 </section>
