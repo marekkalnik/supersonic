@@ -25,7 +25,11 @@ module.exports = (namespace, logger) ->
           value
       (error) ->
         # Debuggify action failure
-        logger.error "#{namespace}.#{name} rejected: #{error}"
+        msg = if error?.errorDescription?
+          error.errorDescription
+        else
+          JSON.stringify error
+        logger.error "#{namespace}.#{name} rejected: #{msg}"
 
         # Callbackify action failure
         if callbacks?.onFailure?

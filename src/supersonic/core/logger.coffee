@@ -87,7 +87,13 @@ module.exports = (steroids, window) ->
             log.debug "#{namespace}.#{name} resolved"
             value
           (error) ->
-            log.error "#{namespace}.#{name} rejected: #{error}"
+            msg = if error?.errorDescription?
+              error.errorDescription
+            else
+              JSON.stringify error
+
+            log.error "#{namespace}.#{name} rejected: #{msg}"
+
             Promise.reject error
         )
 
