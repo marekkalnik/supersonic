@@ -53,7 +53,7 @@ Before adding any real logic, it is important to know how to debug your project.
 
 You may have already noticed that the Connect Screen (the browser window from where you scan the app's QR code) contains a few different tabs, accesible from the top right corner of the window. Go to the "Logs" tab. If you've closed the window at some point, you can re-open it by typing `qr` in the Steroids console and pressing Enter. In the logs screen you will see something akin to:
 
-<img class="tutorial-image" src="/img/tutorial/steroids_connect_logs.png">
+<img class="tutorial-image" src="/img/tutorial/Steroids_connect_logs.png">
 
 In the above snapshot you can see four instances of the same message, each one sent by a different view. You can discern what view is sending a specific message via the "View" column in the logs screen. You can also use the tools at the top of the window to filter messages by message type, view and connected device for more precise tracking of a certain component. Naturally you can also clear the log with the press of a button.
 
