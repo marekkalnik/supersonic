@@ -12,7 +12,6 @@ parent_id: steroids
 ### Related Guides
 * [Android build types][android-build-types]
 * [Configuring custom plugins for your app][custom-plugin-config]
-* [Android app permissions][app-permissions]
 
 The AppGyver Build Service lets you create an APK package of your application that you can distribute either ad hoc or submit to Google Play.
 
@@ -138,15 +137,14 @@ After you're done, click Update Settings. Then, you can use the Build an Ad Hoc 
 
 Building the app takes a few moments, after which you'll get an e-mail with a link to the downloadable APK. You can also see your build history and download earlier builds by clicking on the Show Build History button.
 
-[android-build-types]: /tooling/build-settings/android-build-types
+[android-build-types]: /steroids/build-service/build-settings/android-build-types
 [android-dev-cert]: http://developer.android.com/tools/publishing/app-signing.html#cert
 [android-dev-ninepatch]: http://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch
 [android-dev-orientation]: http://developer.android.com/reference/android/R.attr.html#screenOrientation
 [android-sdk]: http://developer.android.com/sdk/index.html
 [appgyver-cloud]: http://cloud.appgyver.com
-[app-permissions]: /tooling/build-settings/configuring-app-permissions
-[cloud-deploy]: /tooling/build-settings/deploying-to-cloud
-[custom-plugin-config]: /tooling/plugins/configuring-custom-plugins
-[custom-url-scheme-guide]: /tooling/build-settings/custom-url-schemes
+[cloud-deploy]: /steroids/build-service/build-settings/deploying-to-cloud
+[custom-plugin-config]: /steroids/build-service/plugins/configuring-custom-plugins
+[custom-url-scheme-guide]: /supersonic/guides/navigation/navigating-between-apps/communicating-with-external-apps
 [xcode]: https://developer.apple.com/xcode/
 </section>

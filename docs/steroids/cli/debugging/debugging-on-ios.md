@@ -11,7 +11,7 @@ parent_id: steroids
 
 On iOS, all you need to master is the Safari Web Inspector – all iOS versions and devices supported by Supersonic also support it.
 
-However, **the Safari Web Inspector requires OS X**. If you are developing on a Linux or Windows machine, your only option is unfortunately to use the [Connect screen][logging-guide], which only supports logging messages and errors, but is missing more robust tooling.
+However, **the Safari Web Inspector requires OS X**. If you are developing on a Linux or Windows machine, your only option is unfortunately to use [supersonic.logger][logging-guide], which only supports logging messages and errors, but is missing more robust tooling.
 
 ## Debugging with the Safari Web Inspector
 
@@ -53,3 +53,4 @@ When using [LiveReload][livereload-guide], the Web Inspector windows are kept op
 </section>
 [debug-builds-guide]: /steroids/build-service/build-settings/building-a-debug-build/
 [livereload-guide]: /steroids/cli/steroids-cli/local-development-flow/
+[logging-guide]: /steroids/cli/debugging/logging/

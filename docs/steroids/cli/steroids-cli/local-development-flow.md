@@ -21,7 +21,7 @@ To start the Steroids Development Server, run in your Terminal window:
 steroids connect
 ```
 
-You'll see the `steroids-make` Grunt task compile your project files (read more in the [Steroids Grunt tasks](/tooling/steroids-cli/grunt-tasks) guide), after which the [Steroids Connect](/tooling/steroids-connect/) screen is opened in your Web Browser and the Development Server is ready to accept incoming connections.
+You'll see the `steroids-make` Grunt task compile your project files, after which the [Steroids Connect][connect-screen-guide] screen is opened in your Web Browser and the Development Server is ready to accept incoming connections.
 
 ## Connecting with the AppGyver Scanner App
 
@@ -44,7 +44,7 @@ steroids connect --watchExclude=data/changesOften.json,data/alsoChangesOften.jso
 ```
 ## How Your App Files Are Served
 
-Before we dive into how your app reloads itself to show changes, it's important to understand how your app files are served. In [stand-alone builds](/tooling/build-service/) of your app, all HTML, JS, CSS and other assets are included in the physical app bundle. The internal localhost web server running in the AppGyver Wrapper servers them from the device's hard drive.
+Before we dive into how your app reloads itself to show changes, it's important to understand how your app files are served. In [stand-alone builds][build-service-guide] of your app, all HTML, JS, CSS and other assets are included in the physical app bundle. The internal localhost web server running in the AppGyver Wrapper servers them from the device's hard drive.
 
 When you are developing your app with AppGyver Scanner and the Steroids Development Server,  the app files are not transferred to the device's hard drive.
 
@@ -73,3 +73,6 @@ This is caused by a special [LiveReload](http://livereload.com/) implementation 
 Since the local web server on your computer is always serving the latest version of your app (the contents of the `dist/` folder, to be exact), the refreshed page will show your changes.
 
 </section>
+
+[build-service-guide]: /steroids/build-service/
+[connect-screen-guide]: /steroids/cli/connect-screen/

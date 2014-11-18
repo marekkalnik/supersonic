@@ -31,11 +31,7 @@ Much like the debug adhoc, the debug Scanner has the added functionality of allo
 ## App Store build
 
 The App Store build packages your app to be ready for App Store submission. This build type can not be run or debugged before submission.
-
-## Related material
-
-* [Debugging your app](https://academy.appgyver.com/categories/2-tooling/contents/6-debugging-your-app)
-
-[build-settings]: /tooling/build-settings/build-settings-for-ios
-[debug-build]: /tooling/build-settings/building-a-debug-build
 </section>
+
+[build-settings]: /build-service/build-settings/build-settings-for-ios/
+[debug-build]: /steroids/build-service/build-settings/building-a-debug-build/

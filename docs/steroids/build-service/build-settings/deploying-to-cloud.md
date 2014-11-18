@@ -49,7 +49,7 @@ After you've deployed your app to the AppGyver cloud you will get access to a sp
 To share your progress with your friends or co-workers, click on the "open cloud share page", which will open a new browser tab with the share QR code. Now you can just copy and paste this url to anyone you want to take a look at your app.
 
 
-[cloud-services]: httpa://cloud.appgyver.com
+[cloud-services]: https://cloud.appgyver.com
 
 </section>
 

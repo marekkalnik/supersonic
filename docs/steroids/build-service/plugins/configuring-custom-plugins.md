@@ -88,10 +88,9 @@ Ensure that you did not supply any extra whitespace characters while copypasting
 ## Known issues
 
 On iOS, our plugins currently require [ARC support](https://developer.apple.com/library/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html), so make sure the code compiles using ARC.
-
-[android-build-config]: /tooling/build-settings/build-settings-for-android
-[ios-build-config]: /tooling/build-settings/build-settings-for-iOS
-[developing-custom-plugins]: /tooling/plugins/developing-custom-plugins
-[plugin-xml-spec]: http://cordova.apache.org/docs/en/3.5.0/plugin_ref_spec.md.html
-
 </section>
+
+[android-build-config]: /steroids/build-service/build-settings/build-settings-for-android/
+[ios-build-config]: /steroids/build-service/build-settings/build-settings-for-ios/
+[developing-custom-plugins]: /steroids/build-service/plugins/developing-custom-plugins/
+[plugin-xml-spec]: http://cordova.apache.org/docs/en/3.5.0/plugin_ref_spec.md.html

@@ -68,10 +68,6 @@ Cordova has a plugin specification available to enable automated installation of
 
 * [Plugin Specification at (cordova.apache.org)][cordova-plugin-spec]
 
-##Using Cordova CLI
-
-Steroids projects created with v2.7.26 or newer include support for running Cordova CLI commands inside the Steroids project. This way, you can have a native Cordova project running on the side that you can use to develop custom plugins easily. See the [Using Cordova CLI guide][using-cordova-cli] for more information.
-
 ##Native Code
 
 Once you define JavaScript for your plugin, you need to complement it with at a native implementation for at least one platform. Detailed instructions for each platform are linked below. These guides continue to build on the simple Echo Plugin example discussed above.
@@ -89,9 +85,8 @@ You can find an example of a properly set up Echo plugin repository on [GitHub][
 [cordova-android-plugin]: http://cordova.apache.org/docs/en/3.5.0/guide_platforms_android_plugin.md.html#Android%20Plugins
 [cordova-ios-plugin]: http://cordova.apache.org/docs/en/3.5.0/guide_platforms_ios_plugin.md.html#iOS%20Plugins
 [cordova-plugin-guide]: http://cordova.apache.org/docs/en/3.5.0/guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide
-[custom-plugin-config]: /tooling/plugins/configuring-custom-plugins
+[custom-plugin-config]: /steroids/build-service/plugins/configuring-custom-plugins/
 [github]: https://github.com
 [plugman]: https://github.com/apache/cordova-plugman
 [steroids-echo-plugin]: https://github.com/AppGyver/steroids-echo-plugin/
-[using-cordova-cli]: /tooling/plugins/cordova-cli
 </section>

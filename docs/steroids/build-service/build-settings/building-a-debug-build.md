@@ -83,8 +83,7 @@ Scroll to the bottom and click Update Settings. You can now click on the Build a
 
 After the build is complete, download and install the Debug IPA file on your device. Your app will run normally (although a bit slower), but your WebViews will be visible in Safari's Develop Menu for debugging. Note that your device needs to be physically connected to your computer with a wire, and the Web Inspector setting needs to be enabled on your iOS Device in Settings > Safari > Advanced.**  See the [debugging with Safari Web Inspector guide][safari-web-inspector-guide] for more information.
 
-[safari-web-inspector-guide]: /tooling/debugging/debugging-on-ios
-[ios-build-settings-guide]: /tooling/build-settings/build-settings-for-ios
-[cloud-deploy-guide]: /tooling/build-settings/deploying-to-cloud
-
+[safari-web-inspector-guide]: /steroids/cli/debugging/debugging-on-ios/
+[ios-build-settings-guide]: /steroids/build-service/build-settings/build-settings-for-ios/
+[cloud-deploy-guide]: /steroids/build-service/build-settings/deploying-to-cloud/
 </section>

@@ -30,10 +30,7 @@ For example, if you have published your app to Google Play or some other app sto
 
 All the Android build types described above are also available as Crosswalk builds. The Crosswalk builds use [Crosswalk](https://crosswalk-project.org/) for your app's WebView in place of the regular Android Webview. For further information:
 
-* [Crosswalk with Android][crosswalk-android]
-* [And check out the blog: Chromium Crosswalk: A huge boost to hybrid-apps on Android](http://blog.appgyver.com/heartbeat/steroids/android-chromium/)
-
-[android-build-config]: /tooling/build-settings/build-settings-for-android
-[crosswalk-android]: /tooling/
+* [check out the blog: Chromium Crosswalk: A huge boost to hybrid-apps on Android](http://blog.appgyver.com/heartbeat/steroids/android-chromium/)
 </section>
 
+[android-build-config]: steroids/build-service/build-settings/build-settings-for-android

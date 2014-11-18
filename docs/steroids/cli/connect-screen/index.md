@@ -25,9 +25,9 @@ Finally, there are buttons to launch the iOS Simulator (Mac OS X and Xcode 6 req
 
 ## Logs
 
-When developing apps, you will inevitably have to debug your code at some point. There are of course many ways to do this (see the [Debugging index](/tooling/debugging/) for more), but the Logs screen is a very useful tool for debugging purposes.
+When developing apps, you will inevitably have to debug your code at some point. There are of course many ways to do this (see the [Debugging index][debugging-guide] for more), but the Logs screen is a very useful tool for debugging purposes.
 
-See the [Logging guide](/tooling/debugging/logging/) for more information.
+See the [Logging guide][logging-guide] for more information.
 
 ## Documentation
 
@@ -35,10 +35,17 @@ The Documentation screen provides quick links to our documentation (that's where
 
 ## Cloud Settings
 
-The Cloud Settings screen will let you deploy your app to the AppGyver Cloud. After you have deployed your app, you will have access to [Supersonic Data](/data-management/), [Build Settings](/tooling/build-settings/) to create standalone builds, [QR code sharing](/tooling/connect-screen/qr-code-sharing) and more.
+The Cloud Settings screen will let you deploy your app to the AppGyver Cloud. After you have deployed your app, you will have access to [Supersonic Data][data-guide], [Build Settings][build-settings-guide] to create standalone builds, QR code sharing and more.
 
-Clicking the *Deploy to Cloud* button will deploy your app to the cloud, and create a new file at `config/cloud.json`. Read more in the [Deploying to Cloud](/tooling/build-settings/deploying-to-cloud/) guide.
+Clicking the *Deploy to Cloud* button will deploy your app to the cloud, and create a new file at `config/cloud.json`. Read more in the [Deploying to Cloud][deploying-to-cloud-guide] guide.
 
 ## Data
 
-The Data screen is your management console for Supersonic Data. After you have deployed your app to the cloud (see the [guide](/tooling/build-settings/deploying-to-cloud/) for more), you can either connect your app to an existing backend or play around with the AppGyver Sandbox Database. Read more in the [Data Management](/data-management/) section!
+The Data screen is your management console for Supersonic Data. After you have deployed your app to the cloud (see the [guide][deploying-to-cloud-guide] for more), you can either connect your app to an existing backend or play around with the AppGyver Sandbox Database. Read more in the [Data Management][data-guide] section!
+</section>
+
+[build-settings-guide]: /steroids/build-service/build-settings/
+[data-guide]: /supersonic/guides/data/
+[debugging-guide]: /steroids/cli/debugging/
+[deploying-to-cloud-guide]: /steroids/build-service/build-settings/deploying-to-cloud
+[logging-guide]: /steroids/cli/debugging/logging/

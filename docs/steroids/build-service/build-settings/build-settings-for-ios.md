@@ -169,10 +169,10 @@ You can also see your build history and download earlier builds by clicking on t
 [apple-dev]: http://developer.apple.com
 [apple-devices-list]: https://developer.apple.com/account/ios/device/deviceList.action
 [apple-provisioning-list]: https://developer.apple.com/account/ios/profile/profileList.action
-[cloud-deploy]: /tooling/build-settings/deploying-to-cloud
-[custom-plugin-config]: /tooling/plugins/configuring-custom-plugins
-[custom-url-scheme-guide]: /tooling/build-settings/custom-url-schemes
-[debug-build-guide]: /tooling/build-settings/building-a-debug-build
-[ios-build-types]: /tooling/build-settings/ios-build-types
+[cloud-deploy]: /steroids/build-service/build-settings/deploying-to-cloud
+[custom-plugin-config]: /steroids/build-service/plugins/configuring-custom-plugins
+[custom-url-scheme-guide]: /supersonic/guides/navigation/navigating-between-apps/communicating-with-external-apps
+[debug-build-guide]: /steroids/build-service/build-settings/building-a-debug-build/
+[ios-build-types]: /steroids/build-service/build-settings/ios-build-types/
 [testflight]: http://www.testflightapp.com
 </section>

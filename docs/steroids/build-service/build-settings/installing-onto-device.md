@@ -40,4 +40,4 @@ Then, just drag and drop your IPA from Finder into the *Installed Apps* box.
 Open iTunes and select the device icon from top bar. From the *Side Bar*, select *Apps*. Then, drag and drop your IPA from Finder to *Apps*. Select your device under *DEVICES* After the app appears in the list of apps, click *install* for your application and sync.
 </section>
 
-[adb-console-output]: /steroids/cli/
+[adb-console-output]: /steroids/cli/debugging/debugging-on-android/
