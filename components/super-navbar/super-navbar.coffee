@@ -212,11 +212,16 @@ SuperNavbarPrototype.attachedCallback = ->
 
   observer.observe this, observerConfiguration
 
-  if @isHidden()
-    @hide()
-  else
-    @updateNavBar()
-    @show()
+  # ensure visible (for androids sake)
+  @_unsubscribeVisibilityListener = supersonic.ui.views.current.whenVisible =>
+    if @isHidden()
+      @hide()
+    else
+      @updateNavBar()
+      @show()
+
+    @_unsubscribeVisibilityListener()
+    @_unsubscribeVisibilityListener = null
 
 SuperNavbarPrototype.createdCallback = ->
   #console.log "Navigation bar createCallback"
