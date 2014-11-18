@@ -92,7 +92,6 @@ You can find an example of a properly set up Echo plugin repository on [GitHub][
 [custom-plugin-config]: /tooling/plugins/configuring-custom-plugins
 [github]: https://github.com
 [plugman]: https://github.com/apache/cordova-plugman
-[steroids-kitchensink]: https://github.com/AppGyver/kitchensink
 [steroids-echo-plugin]: https://github.com/AppGyver/steroids-echo-plugin/
 [using-cordova-cli]: /tooling/plugins/cordova-cli
 </section>
