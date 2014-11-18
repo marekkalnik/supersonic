@@ -1,0 +1,25 @@
+{% assign section_id = includes.section_id %}
+{% assign nav-topics = "supersonic/tutorial|supersonic/guides|supersonic/api-reference|steroids/cli|steroids/build-service" | split: "|" %}
+
+
+
+<ul class="ag__docs__breadcrumb-nav">
+  <li role="presentation">
+    <a href="/">DOCS HOME</a>
+  </li>
+  <li class="divider">/</li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      QUICK NAV <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="/supersonic/guides">Supersonic guides</a></li>
+      <li><a href="/supersonic/tutorial">Supersonic tutorial</a></li>
+      <li><a href="/supersonic/api-reference">Supersonic API reference</a></li>
+      <li class="divider"></li>
+      <li><a href="/steroids/cli">Steroids CLI guides</a></li>
+      <li><a href="/steroids/build-service">AppGyver Build Service guides</a></li>
+
+    </ul>
+  </li>
+</ul>
