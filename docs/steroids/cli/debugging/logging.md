@@ -6,7 +6,7 @@ section_id: debugging
 subsection_id: logging
 parent_id: steroids
 ---
-
+<section class="docs-section" id="logging">
 # Logging
 
 Knowing what's going on in your app is crucial, especially when things start to go wrong. Supersonic provides powerful tools for logging what's going in your app. It also presents the logs to you in a clear format.
@@ -15,7 +15,7 @@ Knowing what's going on in your app is crucial, especially when things start to 
 
 <img src="/img/tooling/connect-screen/logs-screen.png" width="900">
 
-Let's first take a look at the Logs view in the Steroids [Connect Screen](/tooling/connect-screen/), which is what you'll use to view your collected logs.
+Let's first take a look at the Logs view in the Steroids [Connect Screen][connect-screen-guide], which is what you'll use to view your collected logs.
 
 If you open the Logs view with any Supersonic app running, you'll probably see quite a bit of logs collected automatically.
 
@@ -84,3 +84,5 @@ in your app, the result will be a corresponding `error`-level log line.
 ### Using `console.log`
 
 You can still use `console.log`, but since it's only available if you've opened up a debug Web Inspector, `supersonic.logger` is preferred.
+</section>
+[connect-screen-guide]: /steroids/cli/connect-screen/
