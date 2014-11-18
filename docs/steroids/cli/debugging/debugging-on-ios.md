@@ -6,16 +6,16 @@ section_id: debugging
 subsection_id: debugging-on-ios
 parent_id: steroids
 ---
-
+<section class="docs-section" id="debugging-on-ios">
 # Debugging on iOS
 
 On iOS, all you need to master is the Safari Web Inspector – all iOS versions and devices supported by Supersonic also support it.
 
-However, **the Safari Web Inspector requires OS X**. If you are developing on a Linux or Windows machine, your only option is unfortunately to use [Weinre](/tooling/debugging/weinre/), which is a suboptimal, purely JavaScript-based debugging tool. We are working hard on a better solution!
+However, **the Safari Web Inspector requires OS X**. If you are developing on a Linux or Windows machine, your only option is unfortunately to use the [Connect screen][logging-guide], which only supports logging messages and errors, but is missing more robust tooling.
 
 ## Debugging with the Safari Web Inspector
 
-Safari offers a very powerful Web Inspector tool for debugging your app. Apple doesn't allow the Web Inspector to be used on apps downloaded from the App Store (i.e. the regular AppGyver Scanner), so the debugging tools can currently be used only with the iOS Simulator or with [custom Debug Builds](/tooling/build-service/debug-builds/).
+Safari offers a very powerful Web Inspector tool for debugging your app. Apple doesn't allow the Web Inspector to be used on apps downloaded from the App Store (i.e. the regular AppGyver Scanner), so the debugging tools can currently be used only with the iOS Simulator or with [custom Debug Builds][debug-builds-guide].
 
 The Safari Web Inspector is the only fully functional Web Inspector tool currently available for debugging Supersonic apps running on iOS, so we recommend using it whenever possible.
 
@@ -26,7 +26,7 @@ The easiest way to use the Safari Web Inspector is with the iOS Simulator, where
 
 ### With a Physical Device
 
-Alternatively, you can use a [Debug Scanner or Debug Ad Hoc build](/tooling/build-service/debug-builds/) for debugging your app. After you have requested, downloaded and installed the Debug Scanner/Ad Hoc IPA, you need to enable Web Inspector for Safari on your **iOS device**. Go to *Settings* > *Safari* > *Advanced* and enable the *Web Inspector* option. Then, connect your device to your computer with a cable.
+Alternatively, you can use a [Debug Scanner or Debug Ad Hoc build][debug-builds-guide] for debugging your app. After you have requested, downloaded and installed the Debug Scanner/Ad Hoc IPA, you need to enable Web Inspector for Safari on your **iOS device**. Go to *Settings* > *Safari* > *Advanced* and enable the *Web Inspector* option. Then, connect your device to your computer with a cable.
 
 ### Enabling the Safari Develop Menu
 <p class="advanced-panel">
@@ -49,4 +49,7 @@ If you type in `window.location.reload();` or press **CMD + R**, the WebView rel
 
 You can even debug JavaScript by inserting breakpoints: open a `.js` file in the Safari Web Inspector (e.g. from the *Resource* tab) and click on the line numbers to insert break points. Then, reload the WebView. JavaScript execution will pause at the breakpoints, and the *Debug* tab shows the current call stack.
 
-When using [LiveReload](/tooling/steroids-cli/), the Web Inspector windows are kept open when the app refreshes. However, if you disable LiveReload with the `--no-livereload` flag or initiate a full refresh by running `r` or `refresh` in the Steroids Developer Sever Console, all open Safari Web Inspector windows are unfortunately closed. You need to manually re-open them after the app has reloaded.
+When using [LiveReload][livereload-guide], the Web Inspector windows are kept open when the app refreshes. However, if you disable LiveReload with the `--no-livereload` flag or initiate a full refresh by running `r` or `refresh` in the Steroids Developer Sever Console, all open Safari Web Inspector windows are unfortunately closed. You need to manually re-open them after the app has reloaded.
+</section>
+[debug-builds-guide]: /steroids/build-service/build-settings/building-a-debug-build/
+[livereload-guide]: /steroids/cli/steroids-cli/local-development-flow/
