@@ -151,5 +151,5 @@ With these skills, you have grasped the core of developing Supersonic apps! Once
 
 [cli-dev-flow]: /steroids/cli/steroids-cli/local-development-flow/
 [nav-bar]: /supersonic/guides/ui/native-components/navigation-bar
-[super-navigate]: /supersonic/guides/navigation/declarative-navigation
+[super-navigate]: /supersonic/api-reference/stable/components/super-navigate
 [second-mile]: /supersonic/tutorial/second-mile
