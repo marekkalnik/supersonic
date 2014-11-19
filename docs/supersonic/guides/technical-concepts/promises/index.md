@@ -61,5 +61,5 @@ With APIs using normal callbacks this code would have lead to extremely complica
 
 </section>
 
-[data-model-api]: /supersonic/api-reference/stable/supersonic/data/model-class
+[data-model-api]: /supersonic/api-reference/stable/supersonic/data/model/model-class/
 [dialog-api]: /supersonic/api-reference/stable/supersonic/ui/dialog/confirm

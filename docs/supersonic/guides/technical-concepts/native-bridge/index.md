@@ -14,4 +14,4 @@ The basic functionality of the native API bridge is demonstrated with the [super
 </section>
 
 [promises-overview]: /supersonic/guides/technical-concepts/promises
-[debug-api]: /supersonic/api-reference/stable
+[debug-api]: /supersonic/api-reference/

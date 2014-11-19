@@ -27,7 +27,7 @@ compassStream.onValue (heading) ->
   )
 ```
 
-Event streams that Supersonic returns can be manipulated (e.g. filtered, combined, ...) easily using Functional Reactive programming library [Bacon.js]((https://github.com/baconjs/bacon.js/)).
+Event streams that Supersonic returns can be manipulated (e.g. filtered, combined, ...) easily using Functional Reactive programming library [Bacon.js](https://github.com/baconjs/bacon.js/).
 
 # Learn more about streams
 
