@@ -9,7 +9,7 @@ module.exports = (steroids, log) ->
    # @name initialView
    # @overview
    # @description
-   # Methods for showing and dismissing the Initial View. The Initial View is a special view that is defined in `config/structure.coffee` and is shown before any other views in your app are loaded. For more information, please see the Initial View guide.
+   # Methods for showing and dismissing the Initial View. The Initial View is a special view that is defined in `config/structure.coffee` and is shown before any other views in your app are loaded. For more information, please see the [Initial View guide](/supersonic/guides/navigation/navigating-between-views/initial-view/).
   ###
 
   ###
