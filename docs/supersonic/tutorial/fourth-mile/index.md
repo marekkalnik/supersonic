@@ -49,7 +49,7 @@ You can then share your app with others by copy-pasting the link to that share p
 There are essentially three situations when you need to request a build from the AppGyver build Service:
 
 1. You want to demo your app in a standalone build
-2. You need to use a custom PhoneGap plugin in your app (see the [Extending with plugins][plugins-mile] for instructions on plugin usage)
+2. You need to use a custom PhoneGap plugin in your app (see the [Extending with plugins][plugins-guide] for instructions on plugin usage)
 3. You are ready to release your app.
 
 So the general development workflow is based heavily around using Scanners and the QR code, but some special cases and the final release process require a separate build. The build setup process differs somewhat depending on which platform you are using, follow the links below to see how to set up builds for Android and iOS platforms.
@@ -61,7 +61,7 @@ So the general development workflow is based heavily around using Scanners and t
 <section class="docs-section" id="installing-onto-device">
 ## Installing onto device
 
-For full instructions on installing your app onto a device, see [this guide][install-guide].
+For full instructions on installing your app onto a device, see [the guide][install-guide].
 </section>
 <section class="docs-section" id="publishing-to-app-stores">
 ## Publishing to app stores
@@ -80,7 +80,7 @@ For iOS:
 
 </section>
 
-[android-build-guide]: /steroids/build-settings/build-settings-for-android/
-[install-guide]: /steorids/build-settings/installing-onto-device/
-[ios-build-guide]: /steroids/build-settings/build-settings-for-ios/
-[plugins-mile]: /supersonic/tutorial/seventh-mile
+[android-build-guide]: /steroids/build-service/build-settings/build-settings-for-android/
+[install-guide]: /steroids/build-service/build-settings/installing-onto-device/
+[ios-build-guide]: /steroids/build-service/build-settings/build-settings-for-ios/
+[plugins-guide]: /steroids/build-service/plugins/configuring-custom-plugins/
