@@ -58,7 +58,8 @@ module.exports = (steroids, log) ->
    #   orientation: String
    #) => Promise
    # @define {String} orientation. Possible values "portrait", "portraitUpsideDown", "landscapeLeft", "landscapeRight".
-   # @returns {Promise} Promise that is resolved when the screen is rotated.
+   # @returnsDescription
+   # A Promise that is resolved when the screen is rotated.
    # @usageCoffeeScript
    # supersonic.ui.screen.rotateTo options
    # @usageJavaScript
