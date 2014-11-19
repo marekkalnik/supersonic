@@ -183,10 +183,11 @@ a:link:hover {
  * BREADCRUMB NAV
  **************************************************/
 .ag__docs__breadcrumb-nav {
-  font-size:24px;
+  font-size:14px;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  color: #ffffff;
 }
 
 .ag__docs__breadcrumb-nav:before, .ag__docs__breadcrumb-nav:after {
@@ -206,19 +207,16 @@ display: inline;
 }
 
 .ag__docs__breadcrumb-nav > li > a {
-position: relative;
-display: inline;
-padding: 0px 15px 10px 0px;
+  color:#ecf0f1;
+  position: relative;
+  display: inline;
+  padding: 0px 15px 10px 0px;
 }
 
 
 .ag__docs__breadcrumb-nav > li > a:hover, .ag__docs__breadcrumb-nav > li > a:focus {
+  color:#ecf0f1;
   text-decoration: none;
-  background-color: #eeeeee;
-}
-
-.ag__docs__breadcrumb-nav > li.disabled > a {
-color: #999999;
 }
 
 .ag__docs__breadcrumb-nav > li.disabled > a:hover, .ag__docs__breadcrumb-nav > li.disabled > a:focus {
@@ -229,8 +227,7 @@ color: #999999;
 }
 
 .ag__docs__breadcrumb-nav .open > a, .ag__docs__breadcrumb-nav .open > a:hover, .ag__docs__breadcrumb-nav .open > a:focus {
-background-color: #eeeeee;
-border-color: #4F8EF7;
+  border-color: #4F8EF7;
 }
 
 .ag__docs__breadcrumb-nav > li > a > img {
