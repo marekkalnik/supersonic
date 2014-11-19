@@ -116,17 +116,17 @@ Though the Connect Screen does its best to keep up with changes, you can always 
 
 Now that we've got a few cool superheroes in our database, we want to show that in our app!
 
-Navigate to the "Generate Scaffolds" tab. Since we only have a single resource, it's automatically selected, so you can just click "Generate". This instructs the Steroids CLI to generate a CRUD scaffold for the `superheroes` resource.
+Navigate to the "Generate Scaffolds" tab. Since we only have a single resource, it's automatically selected, so you can just click "Generate". This instructs the Steroids CLI to generate a CRUD scaffold for the `superhero` resource.
 </section>
 
 <section class="docs-section" id="data-in-your-app">
 ## Interacting with Data in your App
 
-If you open your app project in a text editor, you'll notice we have a new Superheroes module in `app/superheroes/`. Let's make our app start from the Superheroes index, and while we're at it, disable tabs. Open `app/structure.coffee`, comment out or remove the tabs item and add a new `rootView` object:
+If you open your app project in a text editor, you'll notice we have a new Superhero module in `app/superhero/`. Let's make our app start from the Superhero index, and while we're at it, disable tabs. Open `config/structure.coffee`, comment out or remove the tabs item and add a new `rootView` object:
 
 ```coffeescript
 rootView:
-  location: "superheroes#index"
+  location: "superhero#index"
 ```
 
 Save the document, and your app will update with just the index page of our Superhero app:
