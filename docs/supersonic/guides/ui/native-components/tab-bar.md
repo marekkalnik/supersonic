@@ -125,5 +125,5 @@ Although tabs are relatively static throughout an app's lifecycle, Supersonic pr
 {% include api_method.md method=method %}
 </section>
 
-[nav-stack]:/ui-and-navigation/navigation/navigation-stack
-[styling-tab-bar]: /ui-and-navigation/styling-native-components/tab-bar
+[nav-stack]:/supersonic/guides/navigation/
+[styling-tab-bar]: /supersonic/guides/ui/styling-native-components/tab-bar

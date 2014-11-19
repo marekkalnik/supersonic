@@ -57,7 +57,7 @@ body_extra_css_classes: device-preview-page
   </p>
 
   <p>
-    You can still style native components with CSS and some of them are even available as special HTML elements. However, there's a bunch of differences you need to know about, so we've put more extensive docs under a different section: see <a href="/ui-and-navigation/native-components">Native Components</a> for more.
+    You can still style native components with CSS and some of them are even available as special HTML elements. However, there's a bunch of differences you need to know about, so we've put more extensive docs under a different section: see <a href="/supersonic/guides/ui/native-components">Native Components</a> for more.
   </p>
 
   <p>
@@ -85,7 +85,7 @@ body_extra_css_classes: device-preview-page
   </p>
 
   <p>
-    Read more in the <a href="/ui-and-navigation/native-components/navigation-bar">Navigation Bar documentation</a>.
+    Read more in the <a href="/supersonic/guides/ui/native-components/navigation-bar">Navigation Bar documentation</a>.
   </p>
 
 {% highlight html %}
@@ -111,7 +111,7 @@ body_extra_css_classes: device-preview-page
   </p>
 
   <p>
-    Read more in the <a href="/ui-and-navigation/native-components/tab-bar">Tab Bar documentation</a>.
+    Read more in the <a href="/supersonic/guides/ui/native-components/tab-bar">Tab Bar documentation</a>.
   </p>
 
   <p>
@@ -129,21 +129,7 @@ body_extra_css_classes: device-preview-page
   </p>
 
   <p>
-    Read more in the <a href="/ui-and-navigation/native-components/drawers">Drawers documentation</a>.
-  </p>
-
-</section>
-
-<section class="docs-section" id="native-components-animations">
-
-  <h3 class="title"><a href="#native-components-animations">Animations</a></h3>
-
-  <p>
-    In addition to CSS animations, Supersonic implements native animations that can be used to mask changes to the DOM.
-  </p>
-
-  <p>
-    Read more in the <a href="/ui-and-navigation/native-components/animation">Native Animations documentation</a>.
+    Read more in the <a href="/supersonic/guides/ui/native-components/drawers">Drawers documentation</a>.
   </p>
 
 </section>
@@ -198,15 +184,15 @@ body_extra_css_classes: device-preview-page
   <h3 class="title"><a href="#html-header">HTML Header</a></h3>
 
   <p class="advanced-panel">
-    <strong>Note:</strong> Since native components are superior in most use cases, HTML footers and headers will not work as intended by default. To make them work, you need to add a <code>fix-body-position</code> class to your <code>&lt;body&gt;</code> element, and then wrap your content inside a <code>&lt;div class="content"&gt;</code> tag. Read more in the guide:<br><a href="/ui-and-navigation/native-components/html-headers-and-footers">HTML Headers and Footers</a>
+    <strong>Note:</strong> Since native components are superior in most use cases, HTML footers and headers will not work as intended by default. To make them work, you need to add a <code>fix-body-position</code> class to your <code>&lt;body&gt;</code> element, and then wrap your content inside a <code>&lt;div class="content"&gt;</code> tag.
   </p>
 
   <p>
     Headers are fixed regions at the top of a screen that can contain
-    a title label, and <a href="#buttons-headers-footers">left/right buttons</a> for navigation or to carry out various actions.
+    a title label, and left/right buttons for navigation or to carry out various actions.
   </p>
 
-  <p>Headers come in a variety of default <a href="#colors">color options</a>:</p>
+  <p>Headers come in a variety of default <a href="#utility-colors">color options</a>:</p>
 
   <div class="ionic ionic-example">
     <div class="bar bar-header bar-light"><div class="h1 title">bar-light</div></div>
@@ -306,12 +292,12 @@ body_extra_css_classes: device-preview-page
   <h3 class="title"><a href="#html-header-subheader">Sub Header</a></h3>
 
   <p class="advanced-panel">
-    <strong>Note:</strong> Since native components are superior in most use cases, HTML footers and headers will not work as intended by default. To make them work, you need to add a <code>fix-body-position</code> class to your <code>&lt;body&gt;</code> element, and then wrap your content inside a <code>&lt;div class="content"&gt;</code> tag. Read more in the guide:<br><a href="/ui-and-navigation/native-components/html-headers-and-footers">HTML Headers and Footers</a>
+    <strong>Note:</strong> Since native components are superior in most use cases, HTML footers and headers will not work as intended by default. To make them work, you need to add a <code>fix-body-position</code> class to your <code>&lt;body&gt;</code> element, and then wrap your content inside a <code>&lt;div class="content"&gt;</code> tag.
   </p>
 
   <p>
     A secondary HTML header bar can be placed below the primary HTML header bar. There are quite a few more ways to customize Headers. Have a look at
-    <a href="#button-bar">Button Bars</a> to get other ideas on how it could be used.
+    <a href="#buttons-button-bar">Button Bars</a> to get other ideas on how it could be used.
   </p>
 {% highlight html %}
 <div class="bar bar-header">
@@ -340,7 +326,7 @@ body_extra_css_classes: device-preview-page
   <h3 class="title"><a href="#html-footer">HTML Footer</a></h3>
 
   <p class="advanced-panel">
-    <strong>Note:</strong> Since native components are superior in most use cases, HTML footers and headers will not work as intended by default. To make them work, you need to add a <code>fix-body-position</code> class to your <code>&lt;body&gt;</code> element, and then wrap your content inside a <code>&lt;div class="content"&gt;</code> tag. Read more in the guide:<br><a href="/ui-and-navigation/native-components/html-headers-and-footers">HTML Headers and Footers</a>
+    <strong>Note:</strong> Since native components are superior in most use cases, HTML footers and headers will not work as intended by default. To make them work, you need to add a <code>fix-body-position</code> class to your <code>&lt;body&gt;</code> element, and then wrap your content inside a <code>&lt;div class="content"&gt;</code> tag.
   </p>
 
   <p>
@@ -395,7 +381,7 @@ body_extra_css_classes: device-preview-page
   <h3 class="title"><a href="#buttons">Buttons</a></h3>
 
   <p>
-    Ah, the Button, an essential part of any mobile experience. They come in the full spectrum of Supersonic's <a href="#colors">default colors</a>.
+    Ah, the Button, an essential part of any mobile experience. They come in the full spectrum of Supersonic's <a href="#utility-colors">default colors</a>.
   </P>
   <p>
     By default a button has <code>display: inline-block</code> applied. Other options include <code>block</code> buttons for a full width.
@@ -729,7 +715,7 @@ body_extra_css_classes: device-preview-page
 
   <p>
     Icons can easily be added to any button by using either the built in Ionicons, or
-    any custom font-pack you choose. <a href="#icons">Learn more about icons</a>.
+    any custom font-pack you choose. <a href="#utility-icons">Learn more about icons</a>.
   </p>
 
   <p>
@@ -1063,7 +1049,7 @@ body_extra_css_classes: device-preview-page
     Lists can have icons assigned either to the left and/or right side of each list item,
     and the alignment classes should be assigned to each <code>item</code> element. Icons can easily
     be added to any item by using either the built in Ionicons, or
-    any custom font-pack you choose. <a href="#icons">Learn more about icons</a>.
+    any custom font-pack you choose. <a href="#utility-icons">Learn more about icons</a>.
   </p>
   <p>
     Use <code>item-icon-left</code> to line up the icon to the left, and <code>item-icon-right</code>
@@ -1407,7 +1393,7 @@ body_extra_css_classes: device-preview-page
     is that a <code>list list-inset</code> element has margin. An inset list is similar to a <a href="#cards">card</a>,
     except an inset list does not have a box-shadow. Since <code>list list-inset</code> does not have a box-shadow,
     it'll be more performant when scrolling.
-    <a href="#inset-forms">Inset forms</a> shows other examples of its usage.
+    <a href="#forms-inset-forms">Inset forms</a> shows other examples of its usage.
   </p>
 
 {% highlight html %}
@@ -1479,7 +1465,7 @@ body_extra_css_classes: device-preview-page
 
   <p>
     Cards add a box-shadow by default, whereas it's cousin <code>list list-inset</code> does not. For performance reasons,
-    when scrolling a large card with many items its recommended to use <a href="#list-inset">inset lists</a> instead.
+    when scrolling a large card with many items its recommended to use <a href="#list-inset-lists">inset lists</a> instead.
   </p>
 
   <div class="doc-example ionic">
@@ -1771,7 +1757,7 @@ body_extra_css_classes: device-preview-page
     so that when any part of the row is tapped then the underlying input receives focus.
   </p>
   <p>
-    Additionally, developers should be aware of the various <a href="/html5-input-types/">HTML5 Input types</a>
+    Additionally, developers should be aware of the various <a href="http://html5doctor.com/html5-forms-input-types/">HTML5 Input types</a>
     so users will be presented with the appropriate virtual keyboard.
   </p>
 
@@ -2010,7 +1996,7 @@ body_extra_css_classes: device-preview-page
   <p>
     By default each input item will fill 100% of the width of its parent element (the list).
     However, you can inset the list using either the <code>list list-inset</code> or <code>card</code> classnames.
-    The <a href="#cards">card</a> classname applies a lower box shadow while <a href="#list-inset">list-inset</a> does not.
+    The <a href="#cards">card</a> classname applies a lower box shadow while <a href="#list-inset-lists">list-inset</a> does not.
     Additionally, if the list's parent element has <code>padding</code> assigned then this will also
     give the form an inset appearance.
   </p>
@@ -2109,7 +2095,7 @@ body_extra_css_classes: device-preview-page
 
   <p>
     Icons can be easily added to the left of an <code>item-input</code> input. Simply add an
-    <a href="#icons">icon</a> before the <code>&lt;input&gt;</code>. By default the icon
+    <a href="#utility-icons">icon</a> before the <code>&lt;input&gt;</code>. By default the icon
     will take the color of label text. However, you can also use add <code>placeholder-icon</code>
     to give it a placeholder color.
   </p>
@@ -2192,7 +2178,7 @@ body_extra_css_classes: device-preview-page
     to make the entire toggle easy to tap or drag.
   </p>
   <p>
-    Toggles can also have <a href="#colors">colors</a> assigned to them,
+    Toggles can also have <a href="#utility-colors">colors</a> assigned to them,
     such as <code>toggle-assertive</code> to assign the assertive color.
   </p>
 
@@ -2324,7 +2310,7 @@ body_extra_css_classes: device-preview-page
     item in order to make the entire checkbox tappable.
   </p>
   <p>
-    Checkboxes can also have <a href="#colors">colors</a> assigned to them,
+    Checkboxes can also have <a href="#utility-colors">colors</a> assigned to them,
     such as <code>checkbox-assertive</code> to assign the assertive color.
   </p>
 
@@ -3317,7 +3303,7 @@ body_extra_css_classes: device-preview-page
   </table>
 
   <p>
-    For further configuration, each class uses a <a href="/tutorials/customizing-ionic-with-sass/">Sass</a>
+    For further configuration, each class uses a Sass
     variable that can be changed to your liking. There's also a <code>responsive-grid-break</code>
     mixin you can use to create your own classes.
   </p>
@@ -3384,7 +3370,7 @@ body_extra_css_classes: device-preview-page
   </p>
 
   <p>
-    To customize the colors you can simply override those coming from the <code>ionic.css</code> CSS file. Additionally, since Supersonic is built using <a href="http://sass-lang.com/">Sass</a>, for more power and flexibility you could also <a href="/overview/customizing-supersonic/sass/">modify and extend the color variables</a> within the <code>_variables.scss</code> file.
+    To customize the colors you can simply override those coming from the <code>ionic.css</code> CSS file. Additionally, since Supersonic is built using <a href="http://sass-lang.com/">Sass</a>, for more power and flexibility you could also modify and extend the color variables within the <code>_variables.scss</code> file.
   </p>
 
   <div class="doc-example ionic">

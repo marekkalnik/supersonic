@@ -38,13 +38,13 @@ The navigation bar has two main functions:
   - It displays a **title** and optional **navigation bar buttons** for the current view
   - When applicable, it provides you with an automatic **back button** for going back in the navigation stack
 
-To learn more about how the navigation stack works, please see the [Navigation Stack](/supersonic/guides/navigation/) guide.
+To learn more about how the navigation stack works, please see the [Navigation Stack][navigation-overview] guides.
 </section>
 
 <section class="docs-section" id="super-navbar">
 ## Using `<super-navbar>``
 
-The `<super-navbar>` HTML element is a [web component](/supersonic/guides/technical-concepts/web-components/) that can be used to declaratively define the navigation bar in your app. Adding the `<super-navbar>` element on a page will display the navigation bar, and the `<super-navbar-title>` child element will allow you to define a title text for your view.
+The `<super-navbar>` HTML element is a [web component][web-component-guide] that can be used to declaratively define the navigation bar in your app. Adding the `<super-navbar>` element on a page will display the navigation bar, and the `<super-navbar-title>` child element will allow you to define a title text for your view.
 
 ```html
 <super-navbar>
@@ -100,7 +100,7 @@ In the above example, the function bound to `$scope.buttonTapped` will be called
 <section class="docs-section" id="styling-with-css">
 ## Styling with CSS
 
-Both the `<super-navbar>` and `<super-navbar-button>` elements can have `id`, `class` and `style` attributes that can be used to define how the navigation bar looks like. You can read more about the available CSS selectors in the [Styling Navigation Bar](/ui-and-navigation/styling-native-components/navigation-bar) guide.
+Both the `<super-navbar>` and `<super-navbar-button>` elements can have `id`, `class` and `style` attributes that can be used to define how the navigation bar looks like. You can read more about the available CSS selectors in the [Styling Navigation Bar][native-styles-guide] guide.
 
 However, there's a few caveats you should know.
 
@@ -158,3 +158,7 @@ Note that there are two namespaces:
 {% assign method = site.data.supersonic.ui.navigationBar.setStyleId %}
 {% include api_method.md method=method %}
 </section>
+
+[native-styles-guide]: /supersonic/guides/ui/styling-native-components
+[navigation-overview]: /supersonic/guides/navigation/
+[web-component-guide]: /supersonic/guides/technical-concepts/web-components/

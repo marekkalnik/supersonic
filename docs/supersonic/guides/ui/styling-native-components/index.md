@@ -90,8 +90,8 @@ In the example above, adding this snippet to `default.css` would send parse erro
 - _image-cache-size_: [number][number-value]. Determines how many bytes of image data are retained in the image cache. A value of `0` indicates that there is no upper limit to how many bytes can live in the cache. Note that `image-cache-count` will still be honored. The default value is `0`.
 
 [Pixate-home]: http://www.pixate.com/
-[navigation-bar-api]:/api-reference/stable/supersonic/ui/navigationbar/
-[tab-bar-api]:/api-reference/stable/supersonic/ui/tabs/
-[navigation-bar-button-api]:/api-reference/stable/supersonic/ui/navigationbarbutton-class/
+[navigation-bar-api]:/supersonic/api-reference/stable/supersonic/ui/navigationbar/
+[tab-bar-api]:/supersonic/api-reference/stable/supersonic/ui/tabs/
+[navigation-bar-button-api]:/supersonic/api-reference/stable/supersonic/ui/navigationbarbutton-class/
 
 </section>

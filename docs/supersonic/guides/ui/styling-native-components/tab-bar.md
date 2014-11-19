@@ -37,10 +37,7 @@ tab-bar {
 }
 ```
 
-the tab-bar icons and text will inherit the `color`rule:
-
-<img src="http://placehold.it/600x300">
-
+the tab-bar icons and text will inherit the `color`rule.
 # Child selectors
 <section class="docs-section" id="navigation-bar-title">
 ## Styling the tab bar items
