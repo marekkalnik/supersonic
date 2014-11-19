@@ -36,3 +36,6 @@ env.json
 
 # Bower build artifacts
 /dist
+
+# Sass cache
+.sass-cache
