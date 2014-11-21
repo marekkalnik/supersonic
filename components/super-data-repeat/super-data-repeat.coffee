@@ -19,7 +19,12 @@ SuperDataRepeatPrototype.attachedCallback = ->
   if model_name?
     Model = supersonic.data.model(model_name)
     @__listener = Model.all().whenChanged (items)=>
-      @shadowRoot.innerHTML = Handlebars.compile("{{#each items}}#{@__template}{{/each}}")({items: items})
+      console.log "EKA"
+      compiled = supersonic.internals.dust.compileFn "{#items}#{@__template}{/items}"
+      console.log "EKA2"
+      dust.render "super-data-repeat-template", { items }, (err, out)->
+        console.log "EKA3"
+        @shadowRoot.innerHTML = out
 
 SuperDataRepeatPrototype.createdCallback = ->
   @__template = @innerHTML

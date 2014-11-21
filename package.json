@@ -69,6 +69,7 @@
     "baconjs": "0.7.33",
     "bluebird": "2.3.11",
     "coffee-script": "1.8.0",
-    "deep-equal": "0.2.1"
+    "deep-equal": "0.2.1",
+    "dustjs-linkedin": "2.5.1"
   }
 }

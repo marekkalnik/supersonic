@@ -26,7 +26,9 @@ SuperDataPrototype.attachedCallback = ->
     Model = supersonic.data.model(model_name)
     @__data_listener = supersonic.ui.views.current.params.onValue (params) =>
       Model.find(params.id).then (object) =>
-        @shadowRoot.innerHTML = Handlebars.compile("#{@__template}")(object)
+        compiled = supersonic.internals.dust.compileFn "#{@__template}"
+        dust.render "super-data-template", object, (err, out)->
+          @shadowRoot.innerHTML = out
 
 SuperDataPrototype.createdCallback = ->
   @__template = @innerHTML
