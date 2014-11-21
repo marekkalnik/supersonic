@@ -106,7 +106,7 @@ The tabs live on even when they're not active. Go to the Settings tab, change th
 <section class="docs-section" id="making-changes">
 ## Making Changes
 
-With your app up and running, we're ready to make some changes. Open the `myProject/app/example/views/gettin-started.html` file in your editor of choice. Find the `<super-navbar>` element and change the title text:
+With your app up and running, we're ready to make some changes. Open the `myProject/app/example/views/getting-started.html` file in your editor of choice. Find the `<super-navbar>` element and change the title text:
 
 ```html
 <super-navbar>

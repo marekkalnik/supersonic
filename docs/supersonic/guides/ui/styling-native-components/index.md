@@ -14,7 +14,7 @@ Steroids² utilises [Pixate Freestyle][pixate-home] to allow developers to style
 
 ### Application Structure
 
-Native styles are kept separate from the rest of your app's CSS, and are read from `/native-styles/ios.css` or `native-styles/android.css`, depending on which platform the app is running on.
+Native styles are kept separate from the rest of your app's CSS, and are read from `app/common/native-styles/ios.css` or `app/common/native-styles/android.css`, depending on which platform the app is running on.
 
 ### Selecting native elements
 
