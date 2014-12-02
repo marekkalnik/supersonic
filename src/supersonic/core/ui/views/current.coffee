@@ -38,39 +38,6 @@ module.exports = (steroids, log, global) ->
     console.log "View #{global.location.href} is not started, wont register channel"
 
 
-  whenVisible = (f) ->
-    whenHidden = null
-    events
-      .visibility
-      .map((visible) ->
-        if visible
-          ->
-            whenHidden = f()
-        else
-          ->
-            whenHidden?()
-            whenHidden = null
-      )
-      .onValue (notify) ->
-        setTimeout notify, 0
-
-  whenHidden = (f) ->
-    whenVisible = null
-    events
-      .visibility
-      .map((visible) ->
-        if not visible
-          ->
-            whenVisible = f()
-        else
-          ->
-            whenVisible?()
-            whenVisible = null
-      )
-      .onValue (notify) ->
-        setTimeout notify, 0
-
-
   ###
    # @namespace supersonic.ui.views
    # @name current
@@ -110,7 +77,11 @@ module.exports = (steroids, log, global) ->
    #   stopListening();
    # });
   ###
-  viewObject.whenVisible = whenVisible
+  viewObject.whenVisible = (listen) ->
+    events.visibility
+      .filter((visible) -> visible)
+      .onValue listen
+
   ###
    # @namespace supersonic.ui.views.current
    # @name whenHidden
@@ -136,7 +107,10 @@ module.exports = (steroids, log, global) ->
    #   stopListening();
    # });
   ###
-  viewObject.whenHidden = whenHidden
+  viewObject.whenHidden = (listen) ->
+    events.visibility
+      .filter((visible) -> !visible)
+      .onValue listen
 
   # pass view object so that params & id can be changed from here
   viewObject
