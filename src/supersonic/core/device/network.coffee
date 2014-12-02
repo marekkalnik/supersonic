@@ -55,44 +55,27 @@ module.exports = (steroids, log) ->
    # Detect when the device goes online.
    # @type
    # supersonic.device.network.whenOnline: (
-   #   listen: () =>
-   #     whenOnline?: Function
+   #   listen: Function
    # ) => unsubscribe: Function
-   # @define {Function} listen A function that is fired when the device goes online. Additionally, the `listen` function can return a `whenOffline` function.
-   # @define {Function} whenOffline A function that gets triggered when the device goes back offline. This is useful for e.g. chaining event streams.
+   # @define {Function} listen A function that is fired when the device goes online.
    # @returnsDescription
    # Returns a function given as a parameter when the device goes online.
    # @define {=>Function} unsubscribe Stop listening for online events.
    # @exampleCoffeeScript
    # unsubscribe = supersonic.device.network.whenOnline ->
    #   supersonic.ui.dialog.alert "Device is online!"
-   #   ->
-   #     supersonic.ui.dialog.alert "Device is offline!"
    #
    # # Later on, we can unsubscribe and stop listening for online events
    # unsubscribe()
    # @exampleJavaScript
    # var unsubscribe = supersonic.device.network.whenOnline( function() {
    #   supersonic.ui.dialog.alert("Device is online!");
-   #   return function() {
-   #     supersonic.ui.dialog.alert "Device is offline!"
-   #   }
    # });
    #
    # // Later on, we can unsubscribe and stop listening for online events
    # unsubscribe();
   ###
-  whenOnline: (f)->
-    whenOnline = null
+  whenOnline: (listen) ->
     network
-      .map((status) ->
-        if status
-          ->
-            whenOnline = f()
-        else
-          ->
-            whenOnline?()
-            whenOnline = null
-      )
-      .onValue (notify) ->
-        setTimeout notify, 0
+      .filter((online) -> online)
+      .onValue listen

@@ -8,36 +8,12 @@ module.exports = (steroids, log) ->
   splashscreen: require("./splashscreen")(steroids, log)
   openURL: require("./openURL")(steroids, log)
   statusBar: require("./statusBar")(steroids, log)
-  status: events.background
-  whenResumed: (f)->
-    whenResumed = null
-    events
-      .background
-        .map((status) ->
-          if status
-            ->
-              whenResumed = f()
-          else
-            ->
-              whenResumed?()
-              whenResumed = null
-        )
-        .onValue (notify) ->
-          setTimeout notify, 0
+  whenResumed: (listen) ->
+    events.background
+      .filter((paused) -> !paused)
+      .onValue listen
 
-  whenPaused: (f)->
-    whenPaused = null
-    events
-      .background
-        .map((status) ->
-          if status
-            ->
-              whenPaused?()
-              whenPaused = null
-          else
-            ->
-              whenPaused = f()
-
-        )
-        .onValue (notify) ->
-          setTimeout notify, 0
+  whenPaused: (listen)->
+    events.background
+      .filter((paused) -> paused)
+      .onValue listen
