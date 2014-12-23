@@ -38,6 +38,10 @@ Push notifications need a backend that communicates with APNS to send the actual
 ### Creating a Debug Scanner
 
 To allow you to use the Safari Remote Web Inspector with your custom Scanner build, we will create a Debug Scanner. This requires you to use a **Developer Certificate** and a **Development Push Certificate**. You will also need to create a Provisioning Profile for your app. In the next sections, we will be creating the necessary files.
+
+### Use Production Certificates for Non-Debug Builds
+
+If you are creating a non-debug Ad Hoc or Scanner build or an App Store build, you need to complete the steps below, but create Production certificates and a Distribution Provisioning Profile for your app.
 </section>
 
 <section class="docs-section" id="ios-developer-certificate">
