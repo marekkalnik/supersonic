@@ -1,8 +1,8 @@
 ---
-layout: guides_push_notifications
+layout: steroids_push_notifications
 title: Supersonic Documentation
 header_sub_title: Learn how to Push notifications Android TODO
-parent_id: supersonic
+parent_id: tooling
 section_id: android
 ---
 <section class="docs-section" id="android-kolmas">

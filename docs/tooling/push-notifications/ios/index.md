@@ -1,19 +1,15 @@
 ---
-layout: guides_push_notifications
+layout: steroids_push_notifications
 header_sub_title: Push Notifications on iOS
-parent_id: supersonic
+parent_id: tooling
 section_id: ios
 ---
 
 <section class="docs-section" id="overview">
 # Push Notifications on iOS
 
-Push Notifications are messages sent via a backend server to an user's phone. If they have enabled push notifications for the app in question, they will receive a notification even if the app is closed.
+This guide will teach you to create the required certificates for your app to utilize the Apple Push Notification Service (APNS). You will then use these certificates to build a custom AppGyver Scanner. This is similar to the steps you need to take when creating a stand-alone or publishable App Store build of your application.
 
-This guide will teach you to create the required certificates for the Apple Push Notification Service (APNS). You will then use these certificates to build a custom AppGyver Scanner. This is similar to the steps you need to take when creating a stand-alone or publishable App Store build of your application.
-</section>
-
-<section class="docs-section" id="what-is-needed">
 ## What is needed
 
 As a first step, you will need to be enrolled to the Apple iOS Developer program. You will need to have access to the iOS Developer Center at [developer.apple.com](developer.apple.com).
