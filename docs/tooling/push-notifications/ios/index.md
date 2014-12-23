@@ -9,7 +9,9 @@ section_id: ios
 # Push Notifications on iOS
 
 This guide will teach you to create the required certificates for your app to utilize the Apple Push Notification Service (APNS). You will then use these certificates to build a custom AppGyver Scanner. This is similar to the steps you need to take when creating a stand-alone or publishable App Store build of your application.
+</section>
 
+<section class="docs-section" id="what-is-needed">
 ## What is needed
 
 As a first step, you will need to be enrolled to the Apple iOS Developer program. You will need to have access to the iOS Developer Center at [developer.apple.com](developer.apple.com).
@@ -28,21 +30,12 @@ The certificate used for Push Notifications on the server side must match the ce
 
 You must be very careful to use development Apple assets for debug Scanner/Adhoc builds and distribution Apple assets for the App Store build (and non-debuggable Scanner/AdHoc build). In other words, do *not* create a debug build in the AppGyver Build Service using a distribution certificate or a distribution provisioning profile, as this will fail.
 
-We will go through the process of setting up the certificates and a provisioning profile later in this guide.
+We will go through the process of setting up the certificates and a provisioning profile in this guide.
 
 ### Push Notification Backend
-For a simple test backend, please see the [Testing with the Pushmeup gem](TODO) guide.
+Push notifications need a backend that communicates with APNS to send the actual messages. You can test push notifications locally from your computer, but for production use and more robust testing, you will want to set up a proper backend. We will go through some available options in this guide.
 
-If you are not comfortable setting up your own service for testing, you can also use a third-party provider such as
-
-  * [Amazon Simple Notification Service](https://aws.amazon.com/sns/)
-  * [Pushwoosh](https://www.pushwoosh.com/)
-  * [Openpush](http://openpush.im/)
-
-</section>
-
-<section class="docs-section" id="configuring-your-ios-client-build"
-## Configuring your iOS client build
+### Creating a Debug Scanner
 
 To allow you to use the Safari Remote Web Inspector with your custom Scanner build, we will create a Debug Scanner. This requires you to use a **Developer Certificate** and a **Development Push Certificate**. You will also need to create a Provisioning Profile for your app. In the next sections, we will be creating the necessary files.
 </section>
@@ -119,7 +112,19 @@ To allow you to use the Safari Remote Web Inspector with your custom Scanner bui
 
 ### Step 3: Create a Provisioning Profile
 1. Open the [iOS Provisioning Profiles (Development) list](https://developer.apple.com/account/ios/profile/profileList.action?type=limited), under: Certificates, Identifiers & Profiles > Provisioning Profiles > Development
-
+2. Click on the + button in the upper-right corner to open the Add iOS Provisioning Profile wizard.
+3. Select the iOS App Development option and click Continue.
+<div class="row">
+<div class="col-sm-6 col-sm-6 col-md-9 col-lg-9 guide-image">
+<img src="/img/tooling/push-notifications/ios-development-provisioning-profile.png" style="width:100%">
+</div>
+</div>
+4. From the drop-down menu, select the App ID you created previously, e.g. `com.mycompany.push.debug.scanner`. Click Continue.
+5. In the Select certificates view, check "Select All". Ensure that the iOS Development certificate you created previously is selected. Click Continue.
+6. In the Select devices view, check "Select All". Ensure that the device you registered previously is selected. Click Continue.
+7. Give your provisioning profile a name and click Submit.
+8. Download the provisioning profile file. You will get a `.mobileprovision` file.
+</section>
 
 <section class="docs-section" id="push-notification-certificate">
 ## Creating a Push Notification Certificate
@@ -162,7 +167,7 @@ Next up, we need to create a Push Notification Certificate and export it. The st
 
 ### Step 3: Selecting a Push Notification provider
 
-Finally, you need to use the exported certificate with a backend service that will actually send the push notifications. For simple local push notifications, please read the [Testing with the Pushmeup gem](TODO) guide.
+Finally, you need to use the exported certificate with a backend service that will actually send the push notifications. For simple local push notifications, please read the [Testing Push Notifications](/tooling/push-notifications/testing-push-notifications/) guide.
 
 There are also third-party push notification provider that provide their own guides for setup:
 
@@ -177,17 +182,28 @@ If you need to convert your certificate's `aps_development.p12` file to `aps_dev
 ```
 openssl pkcs12 -in aps_development.p12 -out aps_development.pem -nodes
 ```
+</section>
 
-##
+<section class="docs-section" id="build-service-configuration">
+## Configure your Application in the AppGyver Build Service
 
-Submit the same CSR file you created above.
-Download the certificate (ios_development.cer) and double-click it to store it in Keychain.
-Export the certificate’s private key into a p12 file in the same manner you did with the Push Notification Certificate.
-As a result, you have a p12 file such as ios_development.p12.
+For more information about using the AppGyver Build Service, see the [Build Service guides](/tooling/build-service/).
 
+1. Nearly there! If you didn't already, deploy your app to the Build Service by running `steroids deploy` in your project directory.
+2. Open the [Build Service](https://build.appgyver.com) and navigate to your app. Alternatively, you can use the Connect Screen's Cloud tab to open your app directly.
+3. Enter the password written under your keyboard in the iOS Debug Certificate password field.
+4. Upload your Developer Certificate `.p12` file under iOS Debug Certificate. Be sure to not upload it under iOS Distribution Certificate!
+5. Configure a **Debug Scanner Build**
+    1. Under Display Name, enter `Debug Scan`
+    2. Under Bundle Identifier, enter **exactly** the App ID you created previously in Apple Developr Center.
+    3. Under Version and Short Version, enter e.g. `4.1.0`.
+    4. Under Debug Scanner Provisioning Profile, upload the the Provisioning Profile you created
+6. Check the Push Notifications checkbox. This will automatically include [AppGyver's PushNotification plugin](https://github.com/AppGyver/PushNotifications) in your build.
+7. Save your settings by clicking Update Settings in the bottom of the screen.
+8. Click on topmost Build <VERSION_NUMBER> menu button and select "Debug > Scanner"
+9. The Build Service will queue a build for you. You will be notified via email to your AppGyver account's email address when the build is ready.
 
-# Configuring your backend
+After you have downloaded and installed the resulting `.ipa` file on your device, your Scanner is ready to receive push notifications!
 
-## Creating the Push Notification Certificate
-
-(Tähän paste google docsista kohdat 1-6)
+See the [Testing Push Notifications guide](/tooling/push-notifications/) for the next steps.
+</section>

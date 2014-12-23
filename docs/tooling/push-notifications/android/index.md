@@ -1,15 +1,16 @@
 ---
 layout: steroids_push_notifications
 title: Supersonic Documentation
-header_sub_title: Learn how to Push notifications Android TODO
+header_sub_title: Push Notifications on Android
 parent_id: tooling
 section_id: android
 ---
 <section class="docs-section" id="android-kolmas">
 
-# Android Android
+# Android
 
-Supersonic applications utilize the Multi-Page App architecture where all your views and controllers are neatly divided into separate HTML and JS documents. This allows for a clear, modular, MVC-based project file structure, superior memory management, easier bug reproduction, and much more.
+On Android, you can simply follow the [Build Service guides](/tooling/build-service/)
+
 
 ## Application architecture
 

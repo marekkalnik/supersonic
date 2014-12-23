@@ -7,6 +7,8 @@ section_id: push-notifications
 ---
 
 <section class="docs-section" id="overview">
+# Push Notifications
+
 Push Notifications are messages sent via a backend server to an user's phone. If they have enabled push notifications for the app in question, they will receive a notification even if the app is closed.
 </section>
 
