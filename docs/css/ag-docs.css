@@ -603,3 +603,8 @@ td.table_property {
   max-width:75%;
   border: 1px solid #7f8c8d;
 }
+
+.guide-image {
+  margin: 20px 0px;
+  border: 1px solid #7f8c8d;
+}
